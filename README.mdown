@@ -6,6 +6,7 @@ Logan **BRAGA** - Claire **DELAYE** - Marie **NUEL**
 BreakInvaders est un mini-jeu r&eacute;alis&eacute; dans le cadre du projet PixelArt *(Cours Gestion de Projet)* de l'IUT MMI du Puy-en-Velay, promotion 2013-2014.
 
 ******
+**NOTE :** Le projet est encore en phase de d&eacute;veloppement et toutes les fonctionnalit&eacute;s peuvent ne pas &ecirc;tre impl&eacute;ment&eacute;es.
 
 ### Le Jeu
 > BreakInvaders est un m&eacute;lange entre le traditionnel *casse-briques* et le non moins c&eacute;l&egrave;bre *Space Invaders*. Le but est de r&eacute;ussir &agrave; obtenir le plus haut score, en &eacute;liminant les briques. Mais attention, elles peuvent se d&eacute;fendre !
@@ -44,6 +45,15 @@ Seules les fonctionnalit&eacute;s notables sont list&eacute;es ici.
 + Sauvegarde des scores en local
 + Portabilit&eacute;
 
+### L'installation
+``` shell
+git clone https://github.com/loganbraga/BreakInvaders.git
+cd BreakInvaders
+qmake
+make
+su -c 'make install'
+```
+
 ### Les d&eacute;tails techniques
 > En quel langage BreakInvaders est-il d&eacute;velopp&eacute; ?
 
@@ -51,7 +61,7 @@ Le mini-jeu est d&eacute;velopp&eacute; en `C++11`, avec la biblioth&egrave;que 
 
 > En combien de temps a-t-il &eacute;t&eacute; d&eacute;velopp&eacute; ?
 
-Il a &eacute;t&eacute; d&eacute;velopp&eacute; en une trentaine d'heures.
+Il a &eacute;t&eacute; d&eacute;velopp&eacute; en une vingtaine d'heures.
 
 > Et tout a &eacute;t&eacute; fait de A &agrave; Z ?
 

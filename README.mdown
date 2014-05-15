@@ -1,0 +1,89 @@
+BreakInvaders, le Jeu
+=====================
+
+Logan **BRAGA** - Claire **DELAYE** - Marie **NUEL**
+
+BreakInvaders est un mini-jeu r&eacute;alis&eacute; dans le cadre du projet PixelArt *(Cours Gestion de Projet)* de l'IUT MMI du Puy-en-Velay, promotion 2013-2014.
+
+******
+
+### Le Jeu
+> BreakInvaders est un m&eacute;lange entre le traditionnel *casse-briques* et le non moins c&eacute;l&egrave;bre *Space Invaders*. Le but est de r&eacute;ussir &agrave; obtenir le plus haut score, en &eacute;liminant les briques. Mais attention, elles peuvent se d&eacute;fendre !
+
+> D&egrave;s le d&eacute;but de la partie, d&eacute;placez votre palette afin de rattraper la balle, et visez les briques. Si la balle tombe, c'est perdu... Enfin, apr&egrave;s 3 essais ! Garre aux murs, qui peuvent vous renvoyer la balle avec force...
+
+> Pour chaque brique cass&eacute;e, votre score est incr&eacute;ment&eacute;. Les points que rapportent chaque brique sont calcul&eacute;s selon leur position : plus la brique est dure &agrave; atteindre, et plus elle vous rapportera de points. Le nombre de vies restant en fin de partie vous accorde un bonus de points : les vrais survivants sont bien &eacute;videmment r&eacute;compens&eacute;s... Les l&acirc;ches, aussi, puisque vous faire toucher par un missile diminue votre score !
+
+### Les images
+*(&agrave; remplir)*
+
+### Les contr&ocirc;les
++ **Lancer le jeu**
+  - Espace
++ **Quitter le jeu**
+  - Echap
+  - Q
++ **Mettre en pause**
+  - Espace
+  - P
++ **D&eacute;placer la palette**
+  - Gauche
+    * Fl&egrave;che gauche, Fl&egrave;che haut, H, J
+  - Droite
+    * Fl&egrave;che droite, Fl&egrave;che bas, K, L
+
+### Les fonctionnalit&eacute;s
+Seules les fonctionnalit&eacute;s notables sont list&eacute;es ici.
+*(Liste non-exhaustive)*
+
++ G&eacute;n&eacute;ration al&eacute;atoire de la position de la palette &agrave; chaque tour
++ G&eacute;n&eacute;ration al&eacute;atoire de la position de la balle &agrave; chaque tour
++ G&eacute;n&eacute;ration dynamique des constructions
++ Personnalisation facile des images du jeu *(briques, balle et palette)*
++ Objets bonus
++ Sauvegarde des scores en local
++ Portabilit&eacute;
+
+### Les d&eacute;tails techniques
+> En quel langage BreakInvaders est-il d&eacute;velopp&eacute; ?
+
+Le mini-jeu est d&eacute;velopp&eacute; en `C++11`, avec la biblioth&egrave;que graphique `Qt4`.
+
+> En combien de temps a-t-il &eacute;t&eacute; d&eacute;velopp&eacute; ?
+
+Il a &eacute;t&eacute; d&eacute;velopp&eacute; en une trentaine d'heures.
+
+> Et tout a &eacute;t&eacute; fait de A &agrave; Z ?
+
+Non ! Le squelette du jeu a &eacute;t&eacute; r&eacute;alis&eacute; gr&acirc;ce au tutorial de [ZetCode](http://zetcode.com/).
+
+> Et comment &ccedil;a marche, tout &ccedil;a ?
+
+Grosso-modo, on se sert d'un objet `balle`, d'un objet `palette`, d'une multitude d'objets `briques`, et d'un objet g&eacute;n&eacute;ral pour accueillir le jeu.
+La balle est en d&eacute;placement constant sur les axes X et Y ; elle change de direction lorsqu'elle rencontre les limites de la fen&ecirc;tre, une brique ou la palette.
+Lorsqu'une brique est touch&eacute;e par la balle, on lui passe sa propri&eacute;t&eacute; `destroyed` *(d&eacute;truite)* &agrave; `vrai` ; toutes les briques dont la propri&eacute;t&eacute; `destroyed` est &agrave; `vrai` ne sont pas dessin&eacute;es lors du prochain rafraichissement de l'interface.
+Un compteur compte le nombre de briques d&eacute;truites pour calculer les points et savoir quand s'arr&ecirc;ter.
+Si la position Y de la balle passe sous la position Y de la palette, elle est consid&eacute;r&eacute;e comme perdue : on r&eacute;initialise la balle et la palette, et on d&eacute;cr&eacute;mente le compteur de vies. Si ce compteur atteint 0, on lance la d&eacute;faite.
+
+### La licence
+Licence **WTFPL** *((do) What The Fuck (you want to) Public Licence)*.
+CF fichier `LICENCE` pour plus d'informations.
+
+******
+
+### Cr&eacute;dits
++ D&eacute;veloppement mini-jeu par Logan **BRAGA**
++ Logo, charte et identit&eacute; graphique par Claire **DELAYE**
++ H&eacute;bergement par Marie **NUEL**
++ D&eacute;veloppement site support par Marie **NUEL**, Claire **DELAYE** et Logan **BRAGA**
+
+##### Contact
++ Logan **BRAGA**
+  - `braga.logan@gmail.com`
+  - [Website](http://loganbraga.fr)
++ Claire **DELAYE**
+  - `delaye.claire@free.fr`
+  - [Website](http://claire-delaye.fr)
++ Marie **NUEL**
+  - `nuel.marie@gmail.com`
+  - [Website](http://marienuel.com)

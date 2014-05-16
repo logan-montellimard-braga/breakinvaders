@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_H
-#define BREAKOUT_H
+#ifndef BREAKINVADERS_H
+#define BREAKINVADERS_H
 
 #include "include/paddle.h"
 #include "include/ball.h"

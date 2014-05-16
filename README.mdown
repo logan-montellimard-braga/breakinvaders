@@ -54,6 +54,8 @@ make
 su -c 'make install'
 ```
 
+Vous devez disposer du paquet QtCreator pour la commande `qmake`, et de `make` d'install&eacute;.
+
 ### Les d&eacute;tails techniques
 > En quel langage BreakInvaders est-il d&eacute;velopp&eacute; ?
 

@@ -146,14 +146,8 @@ void BreakInvaders::keyPressEvent(QKeyEvent *event)
     break;
     case Qt::Key_Space:
     {
-      if (gameStarted)
-      {
-        pauseGame();
-      }
-      else
-      {
-        startGame();
-      }
+      pauseGame();
+      startGame();
     }
     break;
     case Qt::Key_V:

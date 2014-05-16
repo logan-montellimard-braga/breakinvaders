@@ -112,7 +112,7 @@ void BreakInvaders::timerEvent(QTimerEvent *event)
 void BreakInvaders::keyPressEvent(QKeyEvent *event)
 {
   switch (event->key()) {
-    case Qt::Key_Left: case Qt::Key_H: case Qt::Key_J:
+    case Qt::Key_Left: case Qt::Key_Up: case Qt::Key_H: case Qt::Key_J:
     {
       if (!paused && gameStarted)
       {
@@ -124,7 +124,7 @@ void BreakInvaders::keyPressEvent(QKeyEvent *event)
       }
     }
     break;
-    case Qt::Key_Right: case Qt::Key_L: case Qt::Key_K:
+    case Qt::Key_Right: case Qt::Key_Down: case Qt::Key_L: case Qt::Key_K:
     {
       if (!paused && gameStarted)
       {

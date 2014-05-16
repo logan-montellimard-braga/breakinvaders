@@ -54,7 +54,7 @@ make
 su -c 'make install'
 ```
 
-Vous devez disposer du paquet QtCreator pour la commande `qmake`, et de `make` d'install&eacute;.
+Vous devez disposer du paquet **QtCreator** pour la commande `qmake`, et de `make` d'install&eacute;.
 
 ### Les d&eacute;tails techniques
 > En quel langage BreakInvaders est-il d&eacute;velopp&eacute; ?
@@ -76,6 +76,29 @@ La balle est en d&eacute;placement constant sur les axes X et Y ; elle change de
 Lorsqu'une brique est touch&eacute;e par la balle, on lui passe sa propri&eacute;t&eacute; `destroyed` *(d&eacute;truite)* &agrave; `vrai` ; toutes les briques dont la propri&eacute;t&eacute; `destroyed` est &agrave; `vrai` ne sont pas dessin&eacute;es lors du prochain rafraichissement de l'interface.
 Un compteur compte le nombre de briques d&eacute;truites pour calculer les points et savoir quand s'arr&ecirc;ter.
 Si la position Y de la balle passe sous la position Y de la palette, elle est consid&eacute;r&eacute;e comme perdue : on r&eacute;initialise la balle et la palette, et on d&eacute;cr&eacute;mente le compteur de vies. Si ce compteur atteint 0, on lance la d&eacute;faite.
+
+> Quelle est l'architecture du projet ?
+
+- **include/**
+  * ball.h
+  * breakinvaders.h
+  * brick.h
+  * paddle.h
+- **src/**
+  * **images/**
+      + ball.png
+      + brick.png
+      + paddle.png
+  * ball.cpp
+  * breakinvaders.cpp
+  * brick.cpp
+  * main.cpp
+  * paddle.cpp
+- BreakInvaders.pro
+- *LICENCE*
+- Makefile
+- *README.mdown*
+
 
 ### La licence
 Licence **WTFPL** *((do) What The Fuck (you want to) Public Licence)*.

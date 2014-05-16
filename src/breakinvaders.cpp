@@ -2,6 +2,7 @@
 #include <sys/time.h>
 #include <QPainter>
 #include <QApplication>
+#include <iostream>
 
 BreakInvaders::BreakInvaders(QWidget *parent) : QWidget(parent)
 {
@@ -20,6 +21,7 @@ BreakInvaders::~BreakInvaders()
   {
     delete bricks[i];
   }
+  std::cout << "Score : " << score << std::endl;
 }
 
 void BreakInvaders::constructBricks()
@@ -49,6 +51,7 @@ void BreakInvaders::resetGameStatus()
   paused = FALSE;
   lives = MAX_LIVES;
   lastLostTime = time(NULL);
+  score = 0;
   for (int i = 0; i < BRICKS; i++)
   {
     bricks[i]->setDestroyed(FALSE);
@@ -215,6 +218,7 @@ void BreakInvaders::victory()
   killTimer(timerId);
   gameWon = TRUE;
   gameStarted = FALSE;
+  score += score * lives;
 }
 
 void BreakInvaders::lostBall()
@@ -250,6 +254,11 @@ void BreakInvaders::checkCollision()
     if (bricks[i]->isDestroyed())
     {
       j++;
+      if (!bricks[i]->hasGivenPoints())
+      {
+        score += 100 - 2*i;
+        bricks[i]->setGivenPoints(TRUE);
+      }
     }
     if (j == BRICKS)
     {

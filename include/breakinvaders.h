@@ -33,10 +33,11 @@ class BreakInvaders : public QWidget
   private:
     int timerId;
     int lives;
-    const int MAX_LIVES = 3;
-    const int ROWS = 4;
-    const int COLS = 6;
-    const int BRICKS = ROWS * COLS;
+    int score;
+    static const int ROWS = 4;
+    static const int COLS = 6;
+    static const int MAX_LIVES = 3;
+    static const int BRICKS = ROWS * COLS;
     unsigned long int lastLostTime;
     unsigned long int currentTime;
     bool gameOver;

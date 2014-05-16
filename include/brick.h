@@ -13,9 +13,7 @@ class Brick
   public:
     void resetState();
     bool isDestroyed();
-    bool hasGivenPoints();
     void setDestroyed(bool);
-    void setGivenPoints(bool);
     QRect getRect();
     void setRect(QRect);
     QImage & getImage();
@@ -25,7 +23,6 @@ class Brick
     QRect rect;
     int position;
     bool destroyed;
-    bool givenPoints;
 };
 
 #endif

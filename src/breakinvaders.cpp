@@ -3,6 +3,7 @@
 #include <QPainter>
 #include <QApplication>
 #include <iostream>
+#include <cstdlib>
 
 BreakInvaders::BreakInvaders(QWidget *parent) : QWidget(parent)
 {
@@ -31,7 +32,7 @@ void BreakInvaders::constructBricks()
   {
     for (int j = 0; j < COLS; j++)
     {
-      bricks[k] = new Brick(j*30+60, i*15+30);
+      bricks[k] = new Brick(j*40+35, i*15+30);
       k++;
     }
   }
@@ -200,9 +201,10 @@ void BreakInvaders::pauseGame()
   }
 }
 
-void BreakInvaders::stopGame()
+void BreakInvaders::defeat()
 {
   killTimer(timerId);
+  calculateScore();
   gameOver = TRUE;
   gameStarted = FALSE;
 }
@@ -210,9 +212,24 @@ void BreakInvaders::stopGame()
 void BreakInvaders::victory()
 {
   killTimer(timerId);
+  calculateScore();
   gameWon = TRUE;
   gameStarted = FALSE;
-  score += score * lives;
+}
+
+void BreakInvaders::calculateScore()
+{
+  for(int i; i < BRICKS; i++)
+  {
+    if (bricks[i]->isDestroyed())
+    {
+      score += 100 - 2*i;
+    }
+  }
+
+  score *= lives + 1;
+  score += rand() % (score/3) + (score/8);
+  score -= rand() % (score/3) + (score/8);
 }
 
 void BreakInvaders::lostBall()
@@ -225,7 +242,7 @@ void BreakInvaders::lostBall()
 
     if (lives <= 0)
     {
-      stopGame();
+      defeat();
     }
     else
     {
@@ -248,11 +265,6 @@ void BreakInvaders::checkCollision()
     if (bricks[i]->isDestroyed())
     {
       j++;
-      if (!bricks[i]->hasGivenPoints())
-      {
-        score += 100 - 2*i;
-        bricks[i]->setGivenPoints(TRUE);
-      }
     }
     if (j == BRICKS)
     {

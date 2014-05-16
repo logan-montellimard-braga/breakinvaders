@@ -4,7 +4,6 @@ Brick::Brick(int x, int y)
 {
   image.load("src/images/brick.png");
   destroyed = FALSE;
-  givenPoints = FALSE;
   rect = image.rect();
   rect.translate(x, y);
 }
@@ -32,17 +31,7 @@ bool Brick::isDestroyed()
   return destroyed;
 }
 
-bool Brick::hasGivenPoints()
-{
-  return givenPoints;
-}
-
 void Brick::setDestroyed(bool destr)
 {
   destroyed = destr;
-}
-
-void Brick::setGivenPoints(bool given)
-{
-  givenPoints = given;
 }

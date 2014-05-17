@@ -1,5 +1,4 @@
 #include "include/paddle.h"
-#include <cstdlib>
 
 Paddle::Paddle()
 {

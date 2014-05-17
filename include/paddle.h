@@ -3,6 +3,7 @@
 
 #include <QImage>
 #include <QRect>
+#include <cstdlib>
 
 class Paddle
 {

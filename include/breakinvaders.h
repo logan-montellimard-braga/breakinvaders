@@ -27,6 +27,7 @@ class BreakInvaders : public QWidget
     void calculateScore();
     void startGame();
     void pauseGame();
+    void restartGame();
     void defeat();
     void lostBall();
     void victory();

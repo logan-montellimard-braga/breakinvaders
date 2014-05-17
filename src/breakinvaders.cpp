@@ -153,6 +153,11 @@ void BreakInvaders::keyPressEvent(QKeyEvent *event)
       startGame();
     }
     break;
+    case Qt::Key_R:
+    {
+      restartGame();
+    }
+    break;
     case Qt::Key_V:
     {
       for (int i = 0; i < BRICKS - 1; i++)
@@ -200,6 +205,18 @@ void BreakInvaders::pauseGame()
   {
     paused = TRUE;
     killTimer(timerId);
+  }
+}
+
+void BreakInvaders::restartGame()
+{
+  if (gameStarted)
+  {
+    killTimer(timerId);
+    resetGameStatus();
+    paddle->resetState();
+    ball->resetState(paddle->getGeneratedPos());
+    startGame();
   }
 }
 

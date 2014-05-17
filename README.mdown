@@ -24,6 +24,8 @@ BreakInvaders est un mini-jeu r&eacute;alis&eacute; dans le cadre du projet Pixe
 + **Quitter le jeu**
   - Echap
   - Q
++ **Relancer la partie**
+  - R
 + **Mettre en pause**
   - Espace
   - P

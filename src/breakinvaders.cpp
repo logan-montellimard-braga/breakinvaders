@@ -1,15 +1,13 @@
 #include "include/breakinvaders.h"
-#include <sys/time.h>
-#include <QPainter>
-#include <QApplication>
-#include <iostream>
-#include <cstdlib>
+
+QTextStream cout(stdout, QIODevice::WriteOnly);
 
 BreakInvaders::BreakInvaders(QWidget *parent) : QWidget(parent)
 {
   paddle = new Paddle();
   ball = new Ball(paddle->getGeneratedPos());
   scoreController = new Score();
+  cout << "Best score : " << scoreController->getBestScore() << "\n";
 
   constructBricks();
   resetGameStatus();
@@ -23,7 +21,7 @@ BreakInvaders::~BreakInvaders()
   {
     delete bricks[i];
   }
-  std::cout << "Score : " << scoreController->getScore() << std::endl;
+  cout << "Score : " << scoreController->getScore() << "\n";
 }
 
 void BreakInvaders::constructBricks()

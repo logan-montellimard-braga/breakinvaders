@@ -2,11 +2,14 @@
 
 Score::Score()
 {
-  score = 0;
+  score = 0; 
+  SCORE_FILE = "src/data/scores.brknvdrs";
+  loadBestScore();
 }
 
 Score::~Score()
 {
+  updateBestScore();
 }
 
 void Score::resetScore()
@@ -22,17 +25,32 @@ void Score::initScore(int baseScore)
   }
 }
 
+void Score::loadBestScore()
+{
+  QFile file(SCORE_FILE);
+  if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+  {
+    bestScore = "0";
+  }
+  else
+  {
+    QByteArray total;
+    QByteArray line;
+    while (!file.atEnd()) {
+      line = file.read(1024);
+      total.append(line);
+    }
+    bestScore = QString(total);
+  }
+}
+
 void Score::calculateScore(Brick * arr[], const int size, int lives)
 {
   score += calcScoreFromBricks(arr, size);
   score += calcScoreFromLives(score, lives);
   score += randomizeScore();
   score -= randomizeScore();
-}
-
-int Score::getScore()
-{
-  return score;
+  updateBestScore();
 }
 
 int Score::calcScoreFromBricks(Brick * arr[], const int size)
@@ -56,4 +74,27 @@ int Score::calcScoreFromLives(int score, int lives)
 int Score::randomizeScore()
 {
   return (rand() % score/3 + score/8);
+}
+
+int Score::getScore()
+{
+  return score;
+}
+
+int Score::getBestScore()
+{
+  return bestScore.toInt();
+}
+
+void Score::updateBestScore()
+{
+  if (score > bestScore.toInt())
+  {
+    QFile data(SCORE_FILE);
+
+    if (data.open(QFile::WriteOnly)) {
+      QTextStream out(&data);
+      out << score;
+    }
+  }
 }

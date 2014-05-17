@@ -9,10 +9,6 @@ Paddle::Paddle()
   resetState();
 }
 
-Paddle::~Paddle()
-{
-}
-
 int Paddle::randomizePos()
 {
   randPos = rand() % 220 + 10;

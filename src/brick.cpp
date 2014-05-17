@@ -8,9 +8,6 @@ Brick::Brick(int x, int y)
   rect.translate(x, y);
 }
 
-Brick::~Brick() {
-}
-
 QRect Brick::getRect()
 {
   return rect;

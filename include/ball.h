@@ -8,7 +8,6 @@ class Ball
 {
   public:
     Ball(int paddlePos);
-    ~Ball();
 
   public:
     void resetState(int paddlePos);

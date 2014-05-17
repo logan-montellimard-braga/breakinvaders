@@ -8,7 +8,6 @@ class Paddle
 {
   public:
     Paddle();
-    ~Paddle();
 
   public:
     void resetState();

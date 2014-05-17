@@ -11,10 +11,6 @@ Ball::Ball(int paddlePos)
   resetState(paddlePos);
 }
 
-Ball::~Ball()
-{
-}
-
 void Ball::autoMove()
 {
   rect.translate(xdir, ydir);

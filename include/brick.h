@@ -8,7 +8,6 @@ class Brick
 {
   public:
     Brick(int, int);
-    ~Brick();
 
   public:
     void resetState();

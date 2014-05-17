@@ -36,7 +36,6 @@ class BreakInvaders : public QWidget
   private:
     int timerId;
     int lives;
-    int score;
     static const int ROWS = 6;
     static const int COLS = 6;
     static const int MAX_LIVES = 3;

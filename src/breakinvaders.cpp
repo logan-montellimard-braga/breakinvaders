@@ -23,7 +23,7 @@ BreakInvaders::~BreakInvaders()
   {
     delete bricks[i];
   }
-  std::cout << "Score : " << score << std::endl;
+  std::cout << "Score : " << scoreController->getScore() << std::endl;
 }
 
 void BreakInvaders::constructBricks()
@@ -54,7 +54,6 @@ void BreakInvaders::resetGameStatus()
   lives = MAX_LIVES;
   lastLostTime = time(NULL);
   scoreController->resetScore();
-  score = scoreController->getScore();
   for (int i = 0; i < BRICKS; i++)
   {
     bricks[i]->setDestroyed(FALSE);
@@ -224,7 +223,6 @@ void BreakInvaders::defeat()
 {
   killTimer(timerId);
   scoreController->calculateScore(bricks, BRICKS, lives);
-  score = scoreController->getScore();
   gameOver = TRUE;
   gameStarted = FALSE;
 }
@@ -233,7 +231,6 @@ void BreakInvaders::victory()
 {
   killTimer(timerId);
   scoreController->calculateScore(bricks, BRICKS, lives);
-  score = scoreController->getScore();
   gameWon = TRUE;
   gameStarted = FALSE;
 }

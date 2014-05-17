@@ -99,7 +99,6 @@ Si la position Y de la balle passe sous la position Y de la palette, elle est co
   * score.cpp
 - BreakInvaders.pro
 - *LICENCE*
-- Makefile
 - *README.mdown*
 - *.gitignore*
 

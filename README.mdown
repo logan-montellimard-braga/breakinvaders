@@ -83,6 +83,7 @@ Si la position Y de la balle passe sous la position Y de la palette, elle est co
   * breakinvaders.h
   * brick.h
   * paddle.h
+  * score.h
 - **src/**
   * **images/**
       + ball.png
@@ -93,6 +94,7 @@ Si la position Y de la balle passe sous la position Y de la palette, elle est co
   * brick.cpp
   * main.cpp
   * paddle.cpp
+  * score.cpp
 - BreakInvaders.pro
 - *LICENCE*
 - Makefile

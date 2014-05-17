@@ -5,9 +5,12 @@
 #include "include/ball.h"
 #include "include/brick.h"
 #include "include/score.h"
-#include <sys/time.h>
 #include <QWidget>
 #include <QKeyEvent>
+#include <QPainter>
+#include <QApplication>
+#include <sys/time.h>
+#include <cstdlib>
 
 class BreakInvaders : public QWidget
 {

@@ -87,6 +87,8 @@ Si la position Y de la balle passe sous la position Y de la palette, elle est co
   * paddle.h
   * score.h
 - **src/**
+  * **data/**
+    + scores.brknvdrs
   * **images/**
       + ball.png
       + brick.png

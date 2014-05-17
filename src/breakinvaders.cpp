@@ -9,6 +9,7 @@ BreakInvaders::BreakInvaders(QWidget *parent) : QWidget(parent)
 {
   paddle = new Paddle();
   ball = new Ball(paddle->getGeneratedPos());
+  scoreController = new Score();
 
   constructBricks();
   resetGameStatus();
@@ -52,7 +53,8 @@ void BreakInvaders::resetGameStatus()
   paused = FALSE;
   lives = MAX_LIVES;
   lastLostTime = time(NULL);
-  score = 0;
+  scoreController->resetScore();
+  score = scoreController->getScore();
   for (int i = 0; i < BRICKS; i++)
   {
     bricks[i]->setDestroyed(FALSE);
@@ -204,7 +206,8 @@ void BreakInvaders::pauseGame()
 void BreakInvaders::defeat()
 {
   killTimer(timerId);
-  calculateScore();
+  scoreController->calculateScore(bricks, BRICKS, lives);
+  score = scoreController->getScore();
   gameOver = TRUE;
   gameStarted = FALSE;
 }
@@ -212,24 +215,10 @@ void BreakInvaders::defeat()
 void BreakInvaders::victory()
 {
   killTimer(timerId);
-  calculateScore();
+  scoreController->calculateScore(bricks, BRICKS, lives);
+  score = scoreController->getScore();
   gameWon = TRUE;
   gameStarted = FALSE;
-}
-
-void BreakInvaders::calculateScore()
-{
-  for(int i; i < BRICKS; i++)
-  {
-    if (bricks[i]->isDestroyed())
-    {
-      score += 100 - 2*i;
-    }
-  }
-
-  score *= lives + 1;
-  score += rand() % (score/3) + (score/8);
-  score -= rand() % (score/3) + (score/8);
 }
 
 void BreakInvaders::lostBall()
@@ -266,7 +255,7 @@ void BreakInvaders::checkCollision()
     {
       j++;
     }
-    if (j == BRICKS)
+    if (j >= BRICKS)
     {
       victory();
     }

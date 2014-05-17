@@ -4,6 +4,7 @@
 #include "include/paddle.h"
 #include "include/ball.h"
 #include "include/brick.h"
+#include "include/score.h"
 #include <sys/time.h>
 #include <QWidget>
 #include <QKeyEvent>
@@ -48,6 +49,7 @@ class BreakInvaders : public QWidget
     Ball *ball;
     Paddle *paddle;
     Brick * bricks[BRICKS];
+    Score *scoreController;
 };
 
 #endif

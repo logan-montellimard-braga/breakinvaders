@@ -8,11 +8,12 @@ DEPENDPATH += . src
 INCLUDEPATH += . include
 
 # Input
-HEADERS += include/ball.h include/breakinvaders.h include/brick.h include/paddle.h
+HEADERS += include/ball.h include/breakinvaders.h include/brick.h include/paddle.h include/score.h
 SOURCES += src/ball.cpp \
            src/breakinvaders.cpp \
            src/brick.cpp \
            src/main.cpp \
-           src/paddle.cpp
+           src/paddle.cpp \
+           src/score.cpp
 DESTDIR = bin
 OBJECTS_DIR = obj

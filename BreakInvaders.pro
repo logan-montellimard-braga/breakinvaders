@@ -16,4 +16,4 @@ SOURCES += src/ball.cpp \
            src/paddle.cpp \
            src/score.cpp
 DESTDIR = bin
-OBJECTS_DIR = obj
+OBJECTS_DIR = build

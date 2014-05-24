@@ -1,0 +1,309 @@
+body {
+  padding-top: 50px;
+  background-color: #f2f2f2;
+  color: #555;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Lato";
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow: visible;
+}
+
+/* Preloader */
+#preloader {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:white;
+  z-index:99999999999999;
+  visibility: hidden;
+}
+#loader {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  background-image:url(../img/load.gif);
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-100px 0 0 -100px;
+  visibility: hidden;
+}
+
+
+/* JS Warning */
+.js-warning {
+  z-index: 999;
+  position: fixed;
+  margin: auto;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,30);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-button {
+  background-color: #aeaeae;
+}
+::-webkit-scrollbar-corner {
+  background-color: black;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-weight: 300;
+  font-family: "Raleway";
+}
+
+/* Paragraphes & typo */
+p {
+  margin-bottom: 25px;
+  line-height: 28px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.big-icons {
+  font-size: 32px;
+}
+
+.med-icons {
+  font-size: 24px;
+}
+
+/* Liens */
+a {
+  color: #d9534f;
+  word-wrap: break-word;
+  -webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in, background 0.2s ease-in;
+  -o-transition: color 0.2s ease-in, background 0.2s ease-in;
+  transition: color 0.2s ease-in, background 0.2s ease-in;
+}
+
+a:hover,
+a:focus {
+  outline: 0;
+  color: #aeaeae;
+  text-decoration: none;
+}
+
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+
+/* Sections */
+  #headerwrap {
+    padding-top: 60px;
+    background-color: #d9534f;
+  }
+
+  #headerwrap h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 70px;
+  }
+
+  #headerwrap h3 {
+    color: white;
+    font-size: 30px;
+  }
+
+  #headerwrap h5 {
+    color: white;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  #headerwrap h6 {
+    color: white;
+  }
+
+  #headerwrap p {
+    color: white;
+    text-align: left;
+  }
+
+
+  /* intro Wrap */
+  #intro {
+    padding-top: 50px;
+    border-top: #bdc3c7 solid 5px;
+  }
+
+  .progress-bar {
+    width: 80%;
+  }
+
+  .progress {
+    height: 35px;
+    border: 1px solid #cecece;
+  }
+
+  #features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #features p {
+    text-align: justify;
+  }
+
+  .tooltip-js + .tooltip > .tooltip-inner {
+    font-weight: bold;
+  }
+
+  .feature:hover {
+    background-color: #ececec;
+  }
+
+  #features .ac a{
+    font-size: 20px;
+  }
+
+  .feature {
+    border-radius: 6px;
+    padding: 15px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  /* Download Wrap */
+  #download {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #d9534f;
+  }
+
+  #download h1 {
+    color: white;
+  }
+
+  /* Contact Wrap */
+  .input-group-addon {
+    color: #2f2f2f;
+    background-color: rgb(250,250,250);
+  }
+
+  .form-control::-webkit-input-placeholder {
+    color: #aeaeae;
+    font-family: 'Raleway';
+  }
+  .form-control::-moz-placeholder {
+    color: #aeaeae;
+    font-family: 'Raleway';
+  }
+  .form-control:-moz-placeholder {
+    color: #aeaeae;
+    font-family: 'Raleway';
+  }
+  .form-control:-ms-input-placeholder {
+    color: #aeaeae;
+    font-family: 'Raleway';
+  }
+
+  input[type=name]:focus, input[type=email]:focus, textarea:focus {
+    box-shadow: 0 0 0px #FFFFFF;
+    border: 1px solid #aeaeae;
+  }
+
+  /* Footer */
+  #footerwrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f2f2f;
+    color: white;
+    text-align: left;
+  }
+
+  #footerwrap h3 {
+    color: white;
+    font-size: 28px;
+  }
+
+  #footerwrap p {
+    color: white;
+    font-size: 18px;
+  }
+
+  #footerwrap em {
+    font-size: 0.85em;
+  }
+
+  #credits {
+    padding-top: 15px;
+    background: #222222;
+    text-align: right;
+  }
+
+  #credits p {
+    color: white;
+  }
+
+  #credits a, #footerwrap a {
+    color: #d9534f;
+  }
+
+  #credits a:hover, #footerwrap a:hover {
+    color: white;
+  }
+
+  #credits .mini {
+    font-size: 0.7em;
+  }
+
+  .btn {
+    font-family: 'Raleway';
+    margin-right: 10px;
+    margin-bottom: 15px;
+    -webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, background 0.2s ease-in;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+  }
+
+  .black {
+    color: #555;
+  }
+
+  .modal-body {
+    text-align: left;
+  }

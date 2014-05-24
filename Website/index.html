@@ -4,126 +4,381 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BreakInvaders, le Jeu. Site web support du jeu, projet Pixel Art IUT MMI du Puy-en-Velay.">
+    <meta name="description" content="BreakInvaders, le jeu. Site web support du jeu, projet Pixel Art IUT MMI du Puy-en-Velay.">
     <meta name="author" content="Logan Braga Claire Delaye Marie Nuel">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
     <title>BreakInvaders, le Jeu</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">BreakInvaders</a>
-        </div>
+  <body data-spy="scroll" data-offset="0" data-target="#navigation" id="top">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="loader">&nbsp;</div>
+    </div>
 
-        <!-- Navbar collabsed links -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="/projet.html">Projet</a></li>
-            <li><a href="/scores.html">High-Scores</a></li>
-            <li><a href="/goodies.html">Goodies</a></li>
-            <li><a href="/contact.php">Contact</a></li>
-          </ul>
+    <!-- Nav -->
+    <nav>
+      <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#top"><b>BreakInvaders</b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active smoothscroll"><a href="#home" class="smothscroll">Accueil</a></li>
+              <li><a href="#projet" class="smoothscroll">Projet</a></li>
+              <li><a href="#download" class="smoothScroll">T&eacute;l&eacute;charger</a></li>
+              <li><a href="#contact" class="smoothScroll">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
+    <!-- JS Warning -->
     <div class="container">
-      <div class="jumbotron spacer">
-        <h1>BreakInvaders, le Jeu !</h1>
-        <p>Bienvenue sur le site support du mini-jeu BreakInvaders, projet r&eacute;alis&eacute; dans le cadre du cours Gestion de Projet <strong>"Pixel Art"</strong> de l'IUT
-          MMI du Puy-en-Velay, promotion 2013-2014 !</p>
-        <p><a class="btn btn-danger btn-lg" href="/download.html">Obtenir gratuitement</a></p>
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <h3>Fonctionnalit&eacute;s</h3>
+      <div class="row js-warning centered">
+        <div class="col-md-12 col-md-offset-3">
+          <div class="alert alert-danger alert-dismissable">Merci d'activer <strong>JavaScript</strong> pour naviguer pleinement sur le site.
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          </div>
         </div>
       </div>
-
-      <div class="row text-center">
-
-        <div class="col-lg-3 col-md-6 feature">
-          <div class="thumbnail">
-            <img src="http://placehold.it/800x500" alt="">
-            <div class="caption">
-              <h3>Feature Label</h3>
-              <p>This would be a great spot to feature some brand new products!</p>
-              <p><a href="/download.html" class="btn btn-danger">T&eacute;l&eacute;charger</a>
-                <a href="/projet.html" class="btn btn-default">Plus d'infos</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 feature">
-          <div class="thumbnail">
-            <img src="http://placehold.it/800x500" alt="">
-            <div class="caption">
-              <h3>Feature Label</h3>
-              <p>This would be a great spot to feature some brand new products!</p>
-              <p><a href="/download.html" class="btn btn-danger">T&eacute;l&eacute;charger</a>
-                <a href="/projet.html" class="btn btn-default">Plus d'infos</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 feature">
-          <div class="thumbnail">
-            <img src="http://placehold.it/800x500" alt="">
-            <div class="caption">
-              <h3>Feature Label</h3>
-              <p>This would be a great spot to feature some brand new products!</p>
-              <p><a href="/download.html" class="btn btn-danger">T&eacute;l&eacute;charger</a>
-                <a href="/projet.html" class="btn btn-default">Plus d'infos</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 feature">
-          <div class="thumbnail">
-            <img src="http://placehold.it/800x500" alt="">
-            <div class="caption">
-              <h3>Feature Label</h3>
-              <p>This would be a great spot to feature some brand new products!</p>
-              <p><a href="/download.html" class="btn btn-danger">T&eacute;l&eacute;charger</a>
-                <a href="/projet.html" class="btn btn-default">Plus d'infos</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <hr>
-
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <p>&copy 2014 - Logan <strong>BRAGA</strong>, Claire <strong>DELAYE</strong>, Marie <strong>NUEL</strong></p>
-              <p>Licence <a href="https://github.com/loganbraga/breakinvaders/blob/master/LICENCE">WTFPL</a></p>
-          </div>
-        </div>
-      </footer>
-
     </div>
 
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Sections -->
+
+    <!-- Home -->
+    <section id="home" name="home"></section>
+    <div id="headerwrap">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-lg-12">
+            <div class="hidden-xs">
+              <h1><b>BreakInvaders</b>, le Jeu !</h1>
+              <h3>Bienvenue sur le site support du projet.</h3>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+              <h3><b>BreakInvaders</b>, le Jeu !</h3>
+              <h6>Bienvenue sur le site support du projet.</h6>
+            </div>
+            <br>
+          </div>
+
+          <div class="col-lg-2">
+            <h5>Ça, c'est notre jeu</h5>
+            <p>Un m&eacute;lange de casse-briques et de Space Invaders. Avec une balle folle. Et des briques. Qui se d&eacute;fendent.
+              <span class="med-icons hidden-lg pull-right"><span class="glyphicon glyphicon-chevron-down"></span></span></p>
+            <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow1_bis.png">
+          </div>
+          <div class="col-lg-8">
+            <img class="img-responsive" src="http://placehold.it/900x520" alt="">
+          </div>
+          <div class="col-lg-2">
+            <br>
+            <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow2_bis.png">
+            <p><span class="med-icons hidden-lg"><span class="glyphicon glyphicon-chevron-up"></span></span></p>
+            <h5>Ça aussi !</h5>
+            <p>Toute la puissance des technos modernes, r&eacute;unies pour vous dans un jeu d&eacute;licieusement r&eacute;tro. Excellent.</p>
+          </div>
+        </div>
+      </div> <!--/ .container -->
+    </div><!--/ #headerwrap -->
+
+    <!-- Project -->
+    <section id="projet" name="projet"></section>
+    <!-- INTRO WRAP -->
+    <div id="intro">
+      <div class="container">
+        <div class="row centered">
+          <h1>Nos engagements</h1>
+          <br>
+          <br>
+          <div class="feature col-lg-4">
+            <i class="fa fa-globe fa-3x"></i>
+            <h3>Multi-plateformes</h3>
+            <p>Disponible en ex&eacute;cutables 64 bits pour Windows et GNU/Linux.<br/>
+              Votre plateforme n'est pas incluse ? Vous avez la possibilit&eacute; de compiler vous-m&ecirc;me le code.</p>
+          </div>
+          <div class="feature col-lg-4">
+            <i class="fa fa-code fa-3x"></i>
+            <h3>Code libre</h3>
+            <p>Parce que nous croyons en un web libre et au partage des connaissances, l'int&eacute;gralit&eacute; du code utilis&eacute; pour le d&eacute;veloppement du jeu est public et libre de droits.<br/> Et c'est aussi le cas du site.</p>
+          </div>
+          <div class="feature col-lg-4">
+            <i class="fa fa-wrench fa-3x"></i>
+            <h3>Personnalisable</h3>
+            <p>Tout le programme est enti&egrave;rement personnalisable, rapidement et simplement.<br/>Changez les images, les scores ou les vitesses en quelques clics, et construisez un jeu qui vous ressemble.</p>
+          </div>
+        </div>
+        <br>
+        <hr>
+      </div> <!--/ .container -->
+    </div><!--/ #introwrap -->
+
+    <!-- Progress -->
+    <div id="progress">
+      <div class="container">
+        <div class="row centered">
+          <h1>Avancement du projet</h1>
+          <br>
+          <br>
+          <div class="col-sm-offset-3 col-sm-6">
+            <div class="progress tooltip-js" data-toggle="tooltip" data-placement="auto top" title="80 %">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <p><strong>&Eacute;tape actuelle :</strong> <em>M&eacute;canisme de d&eacute;fense des briques</em></p>
+            <br>
+            <p>Le projet est actuellement en d&eacute;veloppement ; toutes les fonctionnalit&eacute;s peuvent ne pas &ecirc;tre impl&eacute;ment&eacute;es correctement.
+              <br>Vous pouvez facilement contribuer au projet : du code, une correction, un favori ou m&ecirc;me un test du jeu ; chaque action compte !
+            </p>
+          </div>
+          <div class="col-sm-offset-3 col-sm-6">
+             <a href="http://github.com/loganbraga/breakinvaders" target="_blank"><button type="button" class="btn btn-lg btn-danger"><i class="fa fa-github"></i> D&eacute;p&ocirc;t Github</button></a>
+             <button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#contributeModal"><i class="fa fa-star"></i> Contribuer</button>
+          </div>
+          <div class="modal fade" id="contributeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Comment contribuer ?</h4>
+                </div>
+                <div class="modal-body">
+                  <h5>D&eacute;veloppeurs, pourquoi ne pas...</h5>
+                  <p><ul>
+                    <li>Faire une revue du code ?</li>
+                    <li>Corriger quelques bugs ?</li>
+                    <li>Impl&eacute;menter vos fonctionnalit&eacute;s ?</li>
+                    <li>Proposer des ex&eacute;cutables pour des plateformes suppl&eacute;mentaires ?</li>
+                  </ul></p>
+                  <h5>Amateurs, pourquoi ne pas...</h5>
+                  <p><ul>
+                    <li>Tester le jeu avec retours ?</li>
+                    <li>Suivre le projet sur Github ?</li>
+                    <li>Nous envoyer un petit mot ?</li>
+                    <li>En parler un peu ?</li>
+                  </ul></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-check"></i> Okay !</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+      </div>
+    </div>
+
+    <!-- FEATURES WRAP -->
+    <div id="features" class="container">
+        <div class="row">
+          <h1 class="centered">Comment jouer ?</h1>
+          <br>
+          <br>
+          <div class="col-lg-6 centered">
+            <img class="centered" src="http://placehold.it/340x660" alt="">
+          </div>
+
+          <div class="col-lg-6">
+            <h3>Les r&egrave;gles</h3>
+            <br>
+            <!-- ACCORDION -->
+            <div class="accordion ac" id="game-rules">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#game-rules" href="#rules-concept">
+                    Le Principe                  </a>
+                </div><!-- /accordion-heading -->
+                <div id="rules-concept" class="accordion-body collapse in">
+                  <div class="accordion-inner">
+                    <p>
+                      BreakInvaders est un mélange entre le traditionnel casse-briques et le non moins célèbre Space Invaders. Le but est de réussir à obtenir le plus haut score, en éliminant les briques. Mais attention, elles peuvent se défendre ! Garre aux murs, qui peuvent vous renvoyer la balle avec force...
+
+                    </p>
+                  </div><!-- /accordion-inner -->
+                </div><!-- /collapse -->
+              </div><!-- /accordion-group -->
+              <br>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#game-rules" href="#rules-lives">
+                    Les Vies &nbsp;<i class="black fa fa-angle-down"></i>
+                  </a>
+                </div>
+                <div id="rules-lives" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>
+                      D&egrave;s le d&eacute;but de la partie, d&eacute;placez votre palette afin de rattraper la balle, et visez les briques. Si la balle tombe, c'est perdu... Enfin, apr&egrave;s 3 essais ! Visez les briques sp&eacute;ciales (vous les reconnaitrez !) et obtenez des vies en plus... ou en moins.</p>
+                  </div><!-- /accordion-inner -->
+                </div><!-- /collapse -->
+              </div><!-- /accordion-group -->
+              <br>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#game-rules" href="#rules-score">
+                    Le Score  &nbsp;<i class="black fa fa-angle-down"></i>
+                  </a>
+                </div>
+                <div id="rules-score" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>
+                      Pour chaque brique cass&eacute;e, votre score est incr&eacute;ment&eacute;. Les points que rapportent chaque brique sont calcul&eacute;s selon sa position : plus la brique est dure &agrave; atteindre, et plus elle vous rapportera de points.
+                      <br/>Le nombre de vies restant en fin de partie vous accorde un bonus de points : les vrais survivants sont bien &eacute;videmment r&eacute;compens&eacute;s... Les lâches, aussi, puisque vous faire toucher par un missile diminue votre score !
+                    </p>
+                  </div><!-- /accordion-inner -->
+                </div><!-- /collapse -->
+              </div><!-- /accordion-group -->
+              <br>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#game-rules" href="#rules-controles">
+                    Les Contrôles  &nbsp;<i class="black fa fa-angle-down"></i>
+                  </a>
+                </div>
+                <div id="rules-controles" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>
+                      <ul>
+                        <li><strong>Lancer le jeu</strong>
+                          <ul>
+                            <li>Espace</li>
+                        </ul></li>
+                        <li><strong>Quitter le jeu</strong>
+                          <ul>
+                            <li>Echap</li>
+                            <li>Q</li>
+                        </ul></li>
+                        <li><strong>Relancer la partie</strong>
+                          <ul>
+                            <li>R</li>
+                        </ul></li>
+                        <li><strong>Mettre en pause</strong>
+                          <ul>
+                            <li>Espace</li>
+                            <li>P</li>
+                        </ul></li>
+                        <li><strong>D&eacute;placer la palette</strong>
+                          <ul>
+                            <li>Gauche</li>
+                            <ul>
+                              <li>Fl&egrave;che gauche, Fl&egrave;che haut, H, J</li>
+                            </ul>
+                            <li>Droite</li>
+                            <ul>
+                              <li>Fl&egrave;che droite, Fl&egrave;che bas, K, L</li>
+                            </ul>
+                        </ul></li>
+                      </ul>
+                    </p>
+                  </div><!-- /accordion-inner -->
+                </div><!-- /collapse -->
+              </div><!-- /accordion-group -->
+              <br>
+            </div><!-- Accordion -->
+          </div>
+        </div>
+      </div><!--/ .container -->
+    </div><!--/ #features -->
+
+    <!-- Download -->
+    <section id="download" name="download"></section>
+    <div id="download">
+      <div class="container">
+        <div class="row">
+          <h1 class="centered">T&eacute;l&eacute;charger le jeu</h1>
+          <br>
+          <div class="col-lg-8 col-lg-offset-2">
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div><!-- /container -->
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" name="contact"></section>
+    <div id="footerwrap">
+      <div class="container">
+        <div class="col-lg-5">
+          <h3>Qui sommess-nous&nbsp;?</h3>
+          <p>
+            Logan BRAGA
+            <<a href="http://loganbraga.fr/">loganbraga.fr</a>><br/>
+            <em>D&eacute;veloppeur &eacute;tudiant<br/></em>
+            <br/>
+            Claire DELAYE
+            <<a href="http://delaye-claire.fr/">delaye-claire.fr</a>><br/>
+            <em>Graphiste &eacute;tudiante</br></em>
+            <br/>
+            Marie NUEL
+            <<a href="http://marienuel.com/">marienuel.com</a>><br/>
+            <em>Community Manager &eacute;tudiante</br></em>
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <h3>Nous contacter</h3>
+          <br>
+          <form role="form" action="#" method="post" enctype="plain">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                <input type="name" name="Name" class="form-control input-lg" id="name1" placeholder="Nom..." required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                <input type="email" name="Mail" class="form-control input-lg" id="email1" placeholder="Mail..." required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+              <textarea class="form-control input-lg" name="Message" rows="5" placeholder="Message..." required></textarea>
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-lg btn-default"><i class="fa fa-check"></i> ENVOYER</button>
+            <button type="reset" class="btn btn-lg btn-danger"><i class="fa fa-times"></i> ANNULER</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="credits">
+      <div class="container">
+        <p>Logan <b>BRAGA</b> - Claire <b>DELAYE</b> - Marie <b>NUEL</b>
+          <br/>Licence <a href="https://github.com/loganbraga/breakinvaders/blob/master/LICENCE">WTFPL</a>
+          <br/><span class='mini'>Base th&egrave;me par <a href="http://www.blacktie.co">blacktie.co</a></span></p>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/easing.js"></script>
+    <script src="assets/js/stopVerbosity.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
   </body>
 
 </html>

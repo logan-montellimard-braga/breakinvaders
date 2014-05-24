@@ -45,16 +45,16 @@ void BreakInvaders::resetGameStatus()
     ball->resetState(paddle->getGeneratedPos());
   }
 
-  gameOver = FALSE;
-  gameWon = FALSE;
-  gameStarted = FALSE;
-  paused = FALSE;
+  gameOver = false;
+  gameWon = false;
+  gameStarted = false;
+  paused = false;
   lives = MAX_LIVES;
   lastLostTime = time(NULL);
   scoreController->resetScore();
   for (int i = 0; i < BRICKS; i++)
   {
-    bricks[i]->setDestroyed(FALSE);
+    bricks[i]->setDestroyed(false);
   }
 }
 
@@ -159,7 +159,7 @@ void BreakInvaders::keyPressEvent(QKeyEvent *event)
     {
       for (int i = 0; i < BRICKS - 1; i++)
       {
-        bricks[i]->setDestroyed(TRUE);
+        bricks[i]->setDestroyed(true);
       }
     }
     break;
@@ -186,7 +186,7 @@ void BreakInvaders::startGame()
     }
 
     resetGameStatus();
-    gameStarted = TRUE;
+    gameStarted = true;
     timerId = startTimer(10);
   }
 }
@@ -196,11 +196,11 @@ void BreakInvaders::pauseGame()
   if (paused)
   {
     timerId = startTimer(10);
-    paused = FALSE;
+    paused = false;
   }
   else
   {
-    paused = TRUE;
+    paused = true;
     killTimer(timerId);
   }
 }
@@ -221,16 +221,16 @@ void BreakInvaders::defeat()
 {
   killTimer(timerId);
   scoreController->calculateScore(bricks, BRICKS, lives);
-  gameOver = TRUE;
-  gameStarted = FALSE;
+  gameOver = true;
+  gameStarted = false;
 }
 
 void BreakInvaders::victory()
 {
   killTimer(timerId);
   scoreController->calculateScore(bricks, BRICKS, lives);
-  gameWon = TRUE;
-  gameStarted = FALSE;
+  gameWon = true;
+  gameStarted = false;
 }
 
 void BreakInvaders::lostBall()
@@ -348,7 +348,7 @@ void BreakInvaders::checkCollision()
           ball->setYDir(-1);
         }
 
-        bricks[i]->setDestroyed(TRUE);
+        bricks[i]->setDestroyed(true);
       }
     }
   }

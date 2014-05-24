@@ -3,7 +3,7 @@
 Brick::Brick(int x, int y) 
 {
   image.load("src/images/brick.png");
-  destroyed = FALSE;
+  destroyed = false;
   rect = image.rect();
   rect.translate(x, y);
 }

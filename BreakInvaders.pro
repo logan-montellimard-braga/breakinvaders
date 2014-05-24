@@ -6,6 +6,7 @@ TEMPLATE = app
 TARGET = 
 DEPENDPATH += . src
 INCLUDEPATH += . include
+QT += widgets
 
 # Input
 HEADERS += include/ball.h include/breakinvaders.h include/brick.h include/paddle.h include/score.h

@@ -428,6 +428,8 @@
           </div>
         </div>
       </div>
+      <br>
+      <br>
     </div>
 
 
@@ -455,28 +457,28 @@
           <div class="col-lg-6">
             <h3>Nous contacter</h3>
             <br>
-            <form role="form" action="#" method="post" enctype="plain">
+            <form id="contactForm" role="form" action="#" method="post" enctype="plain">
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                  <input type="name" name="Name" class="form-control input-lg" id="name1" placeholder="Nom..." maxlength="50" required>
+                  <input id="name" type="name" name="name" class="form-control input-lg" placeholder="Nom..." maxlength="51" required>
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
-                  <input type="email" name="Mail" class="form-control input-lg" id="email1" placeholder="Mail..." maxlength="100" required>
+                  <input id="email" type="email" name="email" class="form-control input-lg" placeholder="Mail..." maxlength="256" required>
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
-                  <textarea class="tooltip-js form-control input-lg" data-toggle="tooltip" data-placement="right" title="Max 600 caract&egrave;res" name="Message" rows="5" placeholder="Message..." maxlength="600" required></textarea>
+                  <textarea id="message" class="tooltip-js form-control input-lg" data-toggle="tooltip" data-placement="right" title="Max 600 caract&egrave;res" name="message" rows="5" placeholder="Message..." maxlength="601" required></textarea>
                 </div>
               </div>
               <br>
-              <button type="submit" class="btn btn-lg btn-default"><i class="fa fa-check"></i> ENVOYER</button>
-              <button type="reset" class="btn btn-lg btn-danger"><i class="fa fa-times"></i> ANNULER</button>
+              <button type="submit" id="sendContactForm" class="btn btn-lg btn-default"><i class="fa fa-check"></i> ENVOYER</button>
+              <button type="reset" id="formReset" class="btn btn-lg btn-danger"><i class="fa fa-times"></i> ANNULER</button>
             </form>
           </div>
         </div>
@@ -492,6 +494,7 @@
 
       <!-- Javascript -->
       <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.validate.min.js"></script>
       <script src="assets/js/easing.js"></script>
       <script src="assets/js/main.js"></script>
       <script src="assets/js/bootstrap.js"></script>

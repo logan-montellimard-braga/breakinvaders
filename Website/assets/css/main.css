@@ -80,12 +80,8 @@ p {
   text-align: center;
 }
 
-.big-icons {
-  font-size: 32px;
-}
-
-.med-icons {
-  font-size: 24px;
+.formError {
+  color: #d9534f;
 }
 
 /* Liens */

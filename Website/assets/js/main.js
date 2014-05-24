@@ -31,27 +31,9 @@ jQuery(document).ready(function ($) {
     var target = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(target).offset().top + 5}, 1200, 'easeInOutQuart');
   });
-
-  // Stop verbosity
-  $('textarea').stopVerbosity({
-    limit: 300,
-    indicatorPosition: 'after',
-    indicatorId: 'stopVerbosity',
-    indicatorElementType: 'p',
-    indicatorPhrase: [
-      '[countdown]',
-      'caractères restants'
-    ],
-    indicatorUpdateSpeed: 0,
-    existingIndicator: '',
-    generateIndicator: true,
-    showIndicator: false,
-    useNativeMaxlength: true,
-    textLengthChange: false,
-    useMaxlength: true,
-    beforeAttachment: null,
-    afterAttachment: null,
-    existingText: 'clear'
+  $('.goto').click(function (e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(target).offset().top + 5}, 1200, 'easeInOutQuart');
   });
-
 });

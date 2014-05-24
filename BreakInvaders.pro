@@ -3,7 +3,7 @@
 ######################################################################
 
 TEMPLATE = app
-TARGET = 
+TARGET = BreakInvaders
 DEPENDPATH += . src
 INCLUDEPATH += . include
 QT += widgets

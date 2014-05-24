@@ -43,7 +43,7 @@ $(document).ready(function ($) {
     errorElement: "label",
     wrapper: "td",
     errorPlacement: function(error, element) {
-      error.insertBefore( element.parent().parent());
+      error.insertBefore( element.parent().parent()).hide().fadeIn(600);
       error.wrap("<tr class='formError'></tr>");
       $("<td></td>").insertBefore(error);
     },

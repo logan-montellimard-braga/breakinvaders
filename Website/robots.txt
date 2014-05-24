@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /humans.txt
+Disallow: /LICENCE
+Disallow: /README
+Disallow: /404.html
+Disallow: /css/compass/
+Disallow: /js/coffee/
+Disallow: /js/libs/
+Disallow: /js/plugins/

@@ -5,6 +5,8 @@ Logan **BRAGA** - Claire **DELAYE** - Marie **NUEL**
 
 BreakInvaders est un mini-jeu r&eacute;alis&eacute; dans le cadre du projet PixelArt *(Cours Gestion de Projet)* de l'IUT MMI du Puy-en-Velay, promotion 2013-2014.
 
+**Site support du projet :** [breakinvaders.loganbraga.fr] (http://breakinvaders.loganbraga.fr)
+
 ******
 **NOTE :** Le projet est encore en phase de d&eacute;veloppement et toutes les fonctionnalit&eacute;s peuvent ne pas &ecirc;tre impl&eacute;ment&eacute;es.
 

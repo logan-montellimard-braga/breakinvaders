@@ -81,14 +81,14 @@
             <h5>Ça, c'est notre jeu</h5>
             <p>Un m&eacute;lange de casse-briques et de Space Invaders. Avec une balle folle. Et des briques. Qui se d&eacute;fendent.
               <span class="hidden-lg pull-right"><i class="fa fa-2x fa-angle-down"></i></span></p>
-            <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow1_bis.png">
+            <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow1_bis.png" alt="">
           </div>
           <div class="col-lg-8">
-            <img class="img-responsive" src="http://placehold.it/900x520" alt="">
+            <img class="img-responsive" src="http://placehold.it/900x520" alt="Notre jeu">
           </div>
           <div class="col-lg-2">
             <br>
-            <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow2_bis.png">
+            <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow2_bis.png" alt="">
             <p><span class="hidden-lg"><i class="fa fa-2x fa-angle-up"></i></span></p>
             <h5>Ça aussi&nbsp;!</h5>
             <p>Toute la puissance des technos modernes, r&eacute;unies pour vous dans un jeu d&eacute;licieusement r&eacute;tro. Excellent.</p>
@@ -160,19 +160,19 @@
                 </div>
                 <div class="modal-body">
                   <h5>D&eacute;veloppeurs, pourquoi ne pas...</h5>
-                  <p><ul>
+                  <ul>
                       <li>Faire une revue du code&nbsp;?</li>
                       <li>Corriger quelques bugs&nbsp;?</li>
                       <li>Impl&eacute;menter vos fonctionnalit&eacute;s&nbsp;?</li>
                       <li>Proposer des ex&eacute;cutables pour des plateformes suppl&eacute;mentaires&nbsp;?</li>
-                  </ul></p>
+                  </ul>
                   <h5>Amateurs, pourquoi ne pas...</h5>
-                  <p><ul>
+                  <ul>
                       <li>Tester le jeu avec retours&nbsp;?</li>
                       <li>Suivre le projet sur Github&nbsp;?</li>
                       <li>Nous envoyer un petit mot&nbsp;?</li>
                       <li>En parler un peu&nbsp;?</li>
-                  </ul></p>
+                  </ul>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-check"></i> Okay&nbsp;!</button>
@@ -193,7 +193,7 @@
         <br>
         <br>
         <div class="col-sm-6 col-lg-4 col-lg-offset-1 centered">
-          <img class="hidden-xs centered" src="http://placehold.it/340x660" alt="">
+          <img class="hidden-xs centered" src="http://placehold.it/340x660" alt="Screenshot">
         </div>
 
         <div class="col-sm-6">
@@ -257,39 +257,38 @@
               </div>
               <div id="rules-controles" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  <p>
-                    <ul>
-                      <li><strong>Lancer le jeu</strong>
+                  <br>
+                  <ul>
+                    <li><strong>Lancer le jeu</strong>
+                      <ul>
+                        <li>Espace</li>
+                    </ul></li>
+                    <li><strong>Quitter le jeu</strong>
+                      <ul>
+                        <li>Echap</li>
+                        <li>Q</li>
+                    </ul></li>
+                    <li><strong>Relancer la partie</strong>
+                      <ul>
+                        <li>R</li>
+                    </ul></li>
+                    <li><strong>Mettre en pause</strong>
+                      <ul>
+                        <li>Espace</li>
+                        <li>P</li>
+                    </ul></li>
+                    <li><strong>D&eacute;placer la palette</strong>
+                      <ul>
+                        <li>Gauche</li>
                         <ul>
-                          <li>Espace</li>
-                      </ul></li>
-                      <li><strong>Quitter le jeu</strong>
+                          <li>Fl&egrave;che gauche, Fl&egrave;che haut, H, J</li>
+                        </ul>
+                        <li>Droite</li>
                         <ul>
-                          <li>Echap</li>
-                          <li>Q</li>
-                      </ul></li>
-                      <li><strong>Relancer la partie</strong>
-                        <ul>
-                          <li>R</li>
-                      </ul></li>
-                      <li><strong>Mettre en pause</strong>
-                        <ul>
-                          <li>Espace</li>
-                          <li>P</li>
-                      </ul></li>
-                      <li><strong>D&eacute;placer la palette</strong>
-                        <ul>
-                          <li>Gauche</li>
-                          <ul>
-                            <li>Fl&egrave;che gauche, Fl&egrave;che haut, H, J</li>
-                          </ul>
-                          <li>Droite</li>
-                          <ul>
-                            <li>Fl&egrave;che droite, Fl&egrave;che bas, K, L</li>
-                          </ul>
-                      </ul></li>
-                    </ul>
-                  </p>
+                          <li>Fl&egrave;che droite, Fl&egrave;che bas, K, L</li>
+                        </ul>
+                    </ul></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -379,58 +378,53 @@
             <br>
             <div class="col-md-4">
               <h3><i class="fa fa-download"></i>&nbsp;R&eacute;cup&eacute;rer les sources</h3>
-              <p>
-                <ol>
-                  <li>R&eacute;cup&eacute;rer le code source sur <a href="https://github.com/loganbraga/breakinvaders/archive/master.zip">Github</a></li>
-                  <li>Disposer d'un <a href="https://gcc.gnu.org/">compilateur C++</a></li>
-                  <li>Installer l'utilitaire <a href="https://www.gnu.org/software/make/">GNU Make</a>&nbsp;/&nbsp;<a href="http://gnuwin32.sourceforge.net/packages/make.htm">Windows Make</a></li>
-                  <li>Obtenir la biblioth&egrave;que <a href="http://qt-project.org/downloads">Qt</a></li>
-                  <li>Installer le programme <a href="http://qt-project.org/wiki/category:tools::qtcreator">Qt Creator</a></li>
-                </ol>
-              </p>
+              <ol>
+                <li>R&eacute;cup&eacute;rer le code source sur <a href="https://github.com/loganbraga/breakinvaders/archive/master.zip">Github</a></li>
+                <li>Disposer d'un <a href="https://gcc.gnu.org/">compilateur C++</a></li>
+                <li>Installer l'utilitaire <a href="https://www.gnu.org/software/make/">GNU Make</a>&nbsp;/&nbsp;<a href="http://gnuwin32.sourceforge.net/packages/make.htm">Windows Make</a></li>
+                <li>Obtenir la biblioth&egrave;que <a href="http://qt-project.org/downloads">Qt</a></li>
+                <li>Installer le programme <a href="http://qt-project.org/wiki/category:tools::qtcreator">Qt Creator</a></li>
+              </ol>
             </div>
             <div class="col-md-4">
               <h3><i class="fa fa-cogs"></i>&nbsp;Compiler</h3>
-              <p>
-                <ol>
-                  <li>G&eacute;n&eacute;rer le projet Qt</li>
-                  <code>
-                    qmake
-                  </code>
-                  <li>Lancer la compilation</li>
-                  <code>
-                    make
-                  </code>
-                  <li>Nettoyer le r&eacute;pertoire</li>
-                  <code>
-                    make clean
-                  </code>
-                </ol>
-              </p>
+              <ol>
+                <li>G&eacute;n&eacute;rer le projet Qt</li>
+                <code>
+                  qmake
+                </code>
+                <li>Lancer la compilation</li>
+                <code>
+                  make
+                </code>
+                <li>Nettoyer le r&eacute;pertoire</li>
+                <code>
+                  make clean
+                </code>
+              </ol>
             </div>
             <div class="col-md-4">
               <h3><i class="fa fa-desktop"></i>&nbsp;Installer</h3>
-              <p>
-                <ol>
-                  <li>Installer le programme</li>
-                  <code>
-                    [sudo] make install
-                  </code>
-                  <li>Ajouter un raccourci</li>
-                  <li>Recharger le <em>$PATH</em> et/ou le <em>shell</em></li>
-                  <li>Jouer</li>
-                  <code>
-                    BreakInvaders
-                  </code>
-                </ol>
-              </div>
+              <ol>
+                <li>Installer le programme</li>
+                <code>
+                  [sudo] make install
+                </code>
+                <li>Ajouter un raccourci</li>
+                <li>Recharger le <em>$PATH</em> et/ou le <em>shell</em></li>
+                <li>Jouer</li>
+                <code>
+                  BreakInvaders
+                </code>
+              </ol>
             </div>
           </div>
         </div>
       </div>
-      <br>
-      <br>
     </div>
+    <br>
+    <br>
+  </div>
 
 
       <!-- Contact -->
@@ -446,11 +440,11 @@
               <br/>
               Claire DELAYE
               &lt;<a href="http://delaye-claire.fr/" target="_blank">delaye-claire.fr</a>&gt;<br/>
-              <em>Graphiste &eacute;tudiante</br></em>
+              <em>Graphiste &eacute;tudiante<br></em>
               <br/>
               Marie NUEL
               &lt;<a href="http://marienuel.com/" target="_blank">marienuel.com</a>&gt;<br/>
-              <em>Community Manager &eacute;tudiante</br></em>
+              <em>Community Manager &eacute;tudiante<br></em>
             </p>
           </div>
 
@@ -461,7 +455,7 @@
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                  <input id="name" type="name" name="name" class="form-control input-lg" placeholder="Nom..." maxlength="51" required>
+                  <input id="name" type="text" name="name" class="form-control input-lg" placeholder="Nom..." maxlength="51" required>
                 </div>
               </div>
               <div class="form-group">

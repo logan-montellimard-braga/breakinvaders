@@ -1,16 +1,8 @@
 $(document).ready(function ($) {
   var links = $('.navbar').find('a');
 
+  // Tooltips
   $('.tooltip-js').tooltip();
-  $("[data-toggle=popover]").popover({
-    html: true,
-    content: function() {
-      return $('#popoverContentContribute').html();
-    },
-    title: function() {
-      return $('#popoverTitleContribute').html();
-    }
-  });
 
   // Preloader
   $('#loader').css({'visibility' : 'visible'});

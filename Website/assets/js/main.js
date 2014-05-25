@@ -51,8 +51,8 @@ $(document).ready(function ($) {
     rules: {
       message :{
         required : true,
-        minlength : 10,
-        maxlength : 600
+        minlength : 25,
+        maxlength : 1000
       },
       email : {
         email : true,

@@ -237,7 +237,7 @@
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#game-rules" href="#rules-score">
-                  Le Score  &nbsp;<i class="black fa fa-angle-down"></i>
+                  Les Scores  &nbsp;<i class="black fa fa-angle-down"></i>
                 </a>
               </div>
               <div id="rules-score" class="accordion-body collapse">
@@ -246,6 +246,7 @@
                     Pour chaque brique cass&eacute;e, votre score est incr&eacute;ment&eacute;. Les points que rapportent chaque brique sont calcul&eacute;s selon sa position : plus la brique est dure &agrave; atteindre, et plus elle vous rapportera de points.
                     <br/>Le nombre de vies restant en fin de partie vous accorde un bonus de points : les vrais survivants sont bien &eacute;videmment r&eacute;compens&eacute;s... Les lâches, aussi, puisque vous faire toucher par un missile diminue votre score&nbsp;!
                   </p>
+                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#highScoresModal"><i class="fa fa-flash"></i> Meilleurs scores</button>
                 </div>
               </div>
             </div>
@@ -296,6 +297,66 @@
             </div>
             <br>
           </div>
+
+          <div class="modal fade" id="highScoresModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Les meilleurs scores</h4>
+                </div>
+                <form id="scoresForm" role="form" action="#" method="post" enctype="plain">
+                  <div class="modal-body">
+                    <table class="table table-stripped table-hover table-responsive table-bordered">
+                      <tr class="active">
+                        <th>Nom</th>
+                        <th>Score</th>
+                      </tr>
+                      <tr>
+                        <td>Logan Braga</td>
+                        <td>12 553</td>
+                      </tr>
+                      <tr>
+                        <td><em>Place &agrave; prendre&nbsp;!</em></td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td><em>Place &agrave; prendre&nbsp;!</em></td>
+                        <td>0</td>
+                      </tr>
+                    </table>
+                    <hr>
+                    <h4>Envoyer vos scores</h4>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                        <input id="scoreName" type="text" name="scoreName" class="form-control input-lg" placeholder="Nom..." maxlength="51" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                        <input id="scoreEmail" type="email" name="scoreEmail" class="form-control input-lg" placeholder="Mail..." maxlength="256" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-picture-o fa-fw"></i></span>
+                        <input id="scoreURL" type="url" name="scoreURL" class="form-control input-lg" placeholder="Lien du screenshot..." maxlength="2000" required>
+                      </div>
+                    </div>
+                    <br>
+                    <button type="submit" id="sendScoreForm" class="btn btn-default"><i class="fa fa-check"></i> Envoyer</button>
+                    <button type="reset" id="resetScoreForm" class="btn btn-danger"><i class="fa fa-times"></i> Annuler</button>
+                  </div>
+                </form>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-check"></i> Okay !</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <a class="accordion ac accordion-toggle" data-toggle="collapse" data-parent="#features" href="#context">
             <h3>Contexte du projet</h3>
           </a>

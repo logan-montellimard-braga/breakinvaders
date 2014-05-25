@@ -29,9 +29,8 @@ $(document).ready(function ($) {
     $('html, body').animate({ scrollTop: $(target).offset().top + 5}, 1200, 'easeInOutQuart');
   });
 
-  // Form validation
-  var validator = $("#contactForm").validate({
-
+  // Form validation : Contact
+  var validator1 = $("#contactForm").validate({
     errorElement: "label",
     wrapper: "td",
     errorPlacement: function(error, element) {
@@ -74,11 +73,56 @@ $(document).ready(function ($) {
       }
     },
   });
-
   $('#formReset').click(function() {
-    validator.resetForm();
+    validator1.resetForm();
   });
 
+  // Form validation : Scores
+  var validator = $("#scoresForm").validate({
+    errorElement: "label",
+    wrapper: "td",
+    errorPlacement: function(error, element) {
+      error.insertBefore( element.parent().parent()).hide().fadeIn(600);
+      error.wrap("<tr class='formError'></tr>");
+      $("<td></td>").insertBefore(error);
+    },
+
+    rules: {
+      scoreURL :{
+        required : true,
+        maxlength : 2000
+      },
+      scoreEmail : {
+        email : true,
+        maxlength : 255
+      },
+      scoreName : {
+        required : true,
+        maxlength : 50,
+        minlength : 2
+      }},
+
+      messages: {
+        scoreName: {
+          required: "Veuillez saisir votre nom",
+          minlength: jQuery.format("Votre nom doit faire au moins {0} carac&egrave;res"),
+          maxlength: jQuery.format("Votre nom doit faire moins de {0} caract&egrave;res")
+        },
+        scoreEmail: {
+          required: "Veuillez saisir votre adresse mail",
+          email: "Veuillez saisir une adresse mail valide",
+          maxlength : jQuery.format("Votre adresse mail doit faire moins de {0} caract&egrave;res")
+        },
+        scoreURL: {
+          required: "Veuillez saisir une URL",
+          url: "Veuillez saisir une URL valide",
+          maxlength: jQuery.format("Une URL valide doit faire moins de {0} caract&egrave;res")
+        }
+      },
+  });
+  $('#resetScoreForm').click(function() {
+    validator.resetForm();
+  });
   jQuery.validator.prototype.hideErrors = function() {
     this.addWrapper( this.toHide  ).slideUp(600);
   }

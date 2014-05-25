@@ -189,7 +189,7 @@
     <!-- FEATURES WRAP -->
     <div id="features" class="container">
       <div class="row">
-        <h1 class="centered">Comment jouer&nbsp;?</h1>
+        <h1 class="centered">Plus d'infos</h1>
         <br>
         <br>
         <div class="col-sm-6 col-lg-4 col-lg-offset-1 centered">
@@ -197,10 +197,12 @@
         </div>
 
         <div class="col-sm-6">
-          <h3>Les r&egrave;gles</h3>
+          <a class="accordion ac accordion-toggle" data-toggle="collapse" data-parent="#features" href="#game-rules">
+            <h3>Comment jouer&nbsp;?</h3>
+          </a>
           <br>
           <!-- ACCORDION -->
-          <div class="accordion ac" id="game-rules">
+          <div class="accordion ac" id="game-rules" class="accordion-body collapse in">
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#game-rules" href="#rules-concept">
@@ -294,6 +296,61 @@
             </div>
             <br>
           </div>
+          <a class="accordion ac accordion-toggle" data-toggle="collapse" data-parent="#features" href="#context">
+            <h3>Contexte du projet</h3>
+          </a>
+          <br>
+
+          <div class="accordion ac" id="context" class="accordion-body collapse in">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#context" href="#initiative">
+                  L'initiative&nbsp;<i class="black fa fa-angle-down"></i></a>
+              </div>
+              <div id="initiative" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <p>
+                    L'initiative du projet vient du Cours <em>Gestion de Projet</em> de l'IUT MMI du Puy-en-Velay, promotion 2013-2014.
+                    Le but est de r&eacute;aliser un projet, quelconque, sur le th&egrave;me du <em>Pixel Art</em> ; vid&eacute;os, murales, jeux, ..., pas plus de contraintes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#context" href="#members">
+                  Les Participants&nbsp;<i class="black fa fa-angle-down"></i></a>
+              </div>
+              <div id="members" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <p>
+                    Les &eacute;l&egrave;ves participants &agrave; ce projet sont Logan <em>BRAGA</em>, Claire <em>DELAYE</em> et Marie <em>NUEL</em>, tous trois &eacute;tudiants &agrave; l'IUT du Puy-en-Velay, et dont
+                    vous pouvez retrouver les informations <a class="goto" href="#contact">ici</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#context" href="#following">
+                  La Suite&nbsp;<i class="black fa fa-angle-down"></i></a>
+              </div>
+              <div id="following" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <p>
+                    Le projet consiste essentiellement en la gestion d'un projet concret et la mise en place d'un site support ; la r&eacute;alisation m&ecirc;me du projet (ici, le jeu) &eacute;tant facultative.
+                    L'ensemble est d&ucirc; au Lundi 02 Juin 2014. Pass&eacute; cette date, le jeu ne sera d&eacute;velopp&eacute; qu'en tant que hobby ponctuel et devrait recevoir des mises &agrave; jour beaucoup plus terses.<br>
+                    Si, n&eacute;anmoins, le projet vous int&eacute;resse, vous pouvez <a class="goto" href="#contact">nous contacter</a> pour &eacute;tudier les modalit&eacute;s de contributions permanentes sur le Github du projet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <br>
         </div>
       </div>
     </div>

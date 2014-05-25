@@ -200,6 +200,22 @@ hr {
   transition: all 0.3s ease;
 }
 
+#features a h3 {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.2s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.2s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.2s ease-in;
+  transition: color 0.1s ease-in, background 0.2s ease-in;
+}
+
+#features a h3:hover {
+  color: #aeaeae;
+}
+
+#features .accordion-inner a {
+  font-size: 1em;
+}
+
 /* Download Wrap */
 #download {
   display: block;

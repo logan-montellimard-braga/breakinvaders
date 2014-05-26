@@ -182,7 +182,7 @@ hr {
   font-weight: bold;
 }
 
-.feature:hover {
+.feature:hover, .feature:focus {
   background-color: #ececec;
 }
 
@@ -208,7 +208,7 @@ hr {
   transition: color 0.1s ease-in, background 0.2s ease-in;
 }
 
-#features a h3:hover {
+#features a h3:hover, #features a h3:focus {
   color: #aeaeae;
 }
 
@@ -243,6 +243,63 @@ hr {
   border-top: 1px solid #EC5753;
 }
 
+blockquote {
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 0px;
+}
+
+#update table {
+  text-align: left;
+  font-family: 'Lato';
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#update table .active {
+  color: #d9534f;
+  background-color: white;
+}
+
+#update table tr {
+  color: white;
+  -webkit-transition: color 0.1s ease-in, background 0.2s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.2s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.2s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.2s ease-in;
+  transition: color 0.1s ease-in, background 0.2s ease-in;
+}
+
+#update table tr:hover {
+  /* color: #2f2f2f; */
+  background-color: rgba(255,255,255,0.1);
+}
+
+#update table tr:hover:first-child {
+  color: #d9534f;
+}
+
+#update caption {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#update table td a {
+  color: white;
+}
+
+#update table .tooltip-inner {
+  max-width: 350px;
+}
+
+#hint p {
+  text-align: left;
+}
+
 .operating-system {
   border-radius: 6px;
   padding: 20px;
@@ -253,7 +310,7 @@ hr {
   transition: all 0.3s ease;
 }
 
-.operating-system:hover {
+.operating-system:hover, .operating-system:focus {
   background-color: #E05753;
   cursor: pointer;
 }
@@ -262,7 +319,7 @@ hr {
   color: #303030;
 }
 
-#download a:hover {
+#download a:hover, #download a:focus {
   color: white;
 }
 
@@ -291,7 +348,7 @@ hr {
   transition: all 0.3s ease;
 }
 
-.instruction div:hover {
+.instruction div:hover, .instruction div:hover {
   background-color: #E05753;
 }
 
@@ -360,7 +417,7 @@ input[type=name]:focus, input[type=email]:focus, textarea:focus {
   color: #d9534f;
 }
 
-#credits a:hover, #footerwrap a:hover {
+#credits a:hover, #credits a:focus, #footerwrap a:hover, #footerwrap a:focus {
   color: white;
 }
 

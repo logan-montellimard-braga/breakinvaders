@@ -37,10 +37,10 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active smoothscroll"><a href="#home" class="smothscroll">Accueil</a></li>
-              <li><a href="#projet" class="smoothscroll">Projet</a></li>
-              <li><a href="#download" class="smoothScroll">T&eacute;l&eacute;charger</a></li>
-              <li><a href="#contact" class="smoothScroll">Contact</a></li>
+              <li class="active"><a href="#home" class="smothscroll">Accueil</a></li>
+              <li><a href="#projet">Projet</a></li>
+              <li><a href="#download">T&eacute;l&eacute;charger</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -161,17 +161,17 @@
                 <div class="modal-body">
                   <h5>D&eacute;veloppeurs, pourquoi ne pas...</h5>
                   <ul>
-                      <li>Faire une revue du code&nbsp;?</li>
-                      <li>Corriger quelques bugs&nbsp;?</li>
-                      <li>Impl&eacute;menter vos fonctionnalit&eacute;s&nbsp;?</li>
-                      <li>Proposer des ex&eacute;cutables pour des plateformes suppl&eacute;mentaires&nbsp;?</li>
+                    <li>Faire une revue du code&nbsp;?</li>
+                    <li>Corriger quelques bugs&nbsp;?</li>
+                    <li>Impl&eacute;menter vos fonctionnalit&eacute;s&nbsp;?</li>
+                    <li>Proposer des ex&eacute;cutables pour des plateformes suppl&eacute;mentaires&nbsp;?</li>
                   </ul>
                   <h5>Amateurs, pourquoi ne pas...</h5>
                   <ul>
-                      <li>Tester le jeu avec retours&nbsp;?</li>
-                      <li>Suivre le projet sur Github&nbsp;?</li>
-                      <li>Nous envoyer un petit mot&nbsp;?</li>
-                      <li>En parler un peu&nbsp;?</li>
+                    <li>Tester le jeu avec retours&nbsp;?</li>
+                    <li>Suivre le projet sur Github&nbsp;?</li>
+                    <li>Nous envoyer un petit mot&nbsp;?</li>
+                    <li>En parler un peu&nbsp;?</li>
                   </ul>
                 </div>
                 <div class="modal-footer">
@@ -362,7 +362,7 @@
           </div>
 
           <a class="accordion ac accordion-toggle" data-toggle="collapse" data-parent="#features" href="#context">
-            <h3>Contexte du projet</h3>
+            <h3>Contexte du Projet</h3>
           </a>
           <br>
 
@@ -401,7 +401,7 @@
 
             <div class="accordion-group">
               <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#context" href="#following">
+                <a class="accordion-toggle accordion ac" data-toggle="collapse" data-parent="#context" href="#following">
                   La Suite&nbsp;<i class="black fa fa-angle-down"></i></a>
               </div>
               <div id="following" class="accordion-body collapse">
@@ -415,205 +415,272 @@
               </div>
             </div>
           </div>
-            <br>
+          <br>
         </div>
       </div>
     </div>
 
 
-  <!-- Download -->
-  <section id="download" name="download"></section>
-  <div id="download">
-    <div class="container">
-      <div class="row centered">
-        <h1>T&eacute;l&eacute;charger le jeu</h1>
-        <br>
-        <br>
-        <div class="col-md-10 col-md-offset-1 centered">
-          <div class="col-md-6 operating-system" data-toggle="collapse" data-target="#windowsDL">
-            <i class="fa fa-3x fa-windows"></i>
-            <h3>Windows</h3>
-            <br>
-            <p>
-              Compatible Windows&nbsp;Vista&#0153;, Windows&nbsp;Seven&#0153; et Windows&nbsp;8&#0153;. La d&eacute;sactivation de l'antivirus peut &ecirc;tre n&eacute;cessaire au lancement de l'ex&eacute;cutable.
-            </p>
-            <i class="fa fa-chevron-down"></i>
-            <div class="collapse" id="windowsDL">
-              <hr>
-              <h5>Machines x86_64</h5>
-              <p><a class="tooltip-js goto" data-toggle="tooltip" data-placement="left" title="Non disponible"  href="#download">Archive .zip</a>
-                <br>
-                <a class="tooltip-js goto" data-toggle="tooltip" data-placement="left" title="Non disponible"  href="#download">Ex&eacute;cutable binaire</a></p>
-              <h5>Machines i686</h5>
-              <p><a class="tooltip-js goto" data-toggle="tooltip" data-placement="left" title="Non disponible" href="#download">Archive .zip</a>
-                <br>
-                <a class="tooltip-js goto" data-toggle="tooltip" data-placement="left" title="Non disponible" href="#download">Ex&eacute;cutable binaire</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 operating-system" data-toggle="collapse" data-target="#linuxDL">
-            <i class="fa fa-3x fa-linux"></i>
-            <h3>GNU/Linux</h3>
-            <br>
-            <p>
-              Compatible toutes distributions GNU/Linux. L'application du bit d'ex&eacute;cution peut &ecirc;tre n&eacute;cessaire
-              au lancement de l'ex&eacute;cutable.
-            </p>
-            <i class="fa fa-chevron-down"></i>
-            <div class="collapse" id="linuxDL">
-              <hr>
-              <h5>Machines x86_64</h5>
-              <p><a href="/download/breakinvaders_linux_x86_64.zip" target="_blank">Archive .zip</a>
-                <br>
-                <a href="/download/breakinvaders_linux_x86_64">Ex&eacute;cutable binaire</a></p>
-              <h5>Machines i686</h5>
-              <p><a class="tooltip-js goto" data-toggle="tooltip" data-placement="right" title="Non disponible" href="#download">Archive .zip</a>
-                <br>
-                <a class="tooltip-js goto" data-toggle="tooltip" data-placement="right" title="Non disponible" href="#download">Ex&eacute;cutable binaire</a></p>
-            </div>
-          </div>
+    <!-- Download -->
+    <section id="download" name="download"></section>
+    <div id="download">
+      <div class="container">
+        <div class="row centered">
+          <h1>T&eacute;l&eacute;charger le jeu</h1>
           <br>
+          <br>
+          <div class="col-md-10 col-md-offset-1 centered">
+            <div class="col-md-6 operating-system" data-toggle="collapse" data-target="#windowsDL">
+              <i class="fa fa-3x fa-windows"></i>
+              <h3>Windows</h3>
+              <br>
+              <p>
+                Compatible Windows&nbsp;Vista&#0153;, Windows&nbsp;Seven&#0153; et Windows&nbsp;8&#0153;. La d&eacute;sactivation de l'antivirus peut &ecirc;tre n&eacute;cessaire au lancement de l'ex&eacute;cutable.
+              </p>
+              <i class="fa fa-chevron-down"></i>
+              <div class="collapse" id="windowsDL">
+                <hr>
+                <h5>Machines x86_64</h5>
+                <p><a class="tooltip-js goto" data-toggle="tooltip" data-placement="left" title="Non disponible"  href="#download">Archive .zip</a>
+                  <br>
+                  <a class="tooltip-js goto" data-toggle="tooltip" data-placement="left" title="Non disponible"  href="#download">Ex&eacute;cutable binaire</a></p>
+                <h5>Machines i686</h5>
+                <p><a class="tooltip-js goto" data-toggle="tooltip" data-placement="left" title="Non disponible" href="#download">Archive .zip</a>
+                  <br>
+                  <a class="tooltip-js goto" data-toggle="tooltip" data-placement="left" title="Non disponible" href="#download">Ex&eacute;cutable binaire</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 operating-system" data-toggle="collapse" data-target="#linuxDL">
+              <i class="fa fa-3x fa-linux"></i>
+              <h3>GNU/Linux</h3>
+              <br>
+              <p>
+                Compatible toutes distributions GNU/Linux. L'application du bit d'ex&eacute;cution peut &ecirc;tre n&eacute;cessaire
+                au lancement de l'ex&eacute;cutable.
+              </p>
+              <i class="fa fa-chevron-down"></i>
+              <div class="collapse" id="linuxDL">
+                <hr>
+                <h5>Machines x86_64</h5>
+                <p><a href="/download/breakinvaders_linux_x86_64.zip" target="_blank">Archive .zip</a>
+                  <br>
+                  <a href="/download/breakinvaders_linux_x86_64">Ex&eacute;cutable binaire</a></p>
+                <h5>Machines i686</h5>
+                <p><a class="tooltip-js goto" data-toggle="tooltip" data-placement="right" title="Non disponible" href="#download">Archive .zip</a>
+                  <br>
+                  <a class="tooltip-js goto" data-toggle="tooltip" data-placement="right" title="Non disponible" href="#download">Ex&eacute;cutable binaire</a></p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="col-md-10 col-md-offset-1 centered">
+            <br>
+            <p>Merci de signaler tout ex&eacute;cutable d&eacute;fectueux ou lien mort en <a class="goto" href="#contact">nous contactant</a>.</p>
+          </div>
         </div>
-        <div class="col-md-10 col-md-offset-1 centered">
-          <br>
-          <p>Merci de signaler tout ex&eacute;cutable d&eacute;fectueux ou lien mort en <a class="goto" href="#contact">nous contactant</a>.</p>
+        <br>
+        <hr>
+      </div>
+
+      <div id="compile">
+        <div class="container">
+          <div class="row centered">
+            <br>
+            <br>
+            <h1>Compiler le jeu</h1>
+            <br>
+            <br>
+            <div class="instruction col-md-12 col-md-offset-0">
+              <p>
+                Votre plateforme n'est pas incluse, les ex&eacute;cutables ci-dessus ne vous conviennent pas ou vous aimez tout simplement compiler vos programmes&nbsp;?
+                C'est possible&nbsp;!
+                <br>
+                <em>Attention, vise les utilisateurs avanc&eacute;s.</em>
+              </p>
+              <br>
+              <div class="col-md-4">
+                <h3><i class="fa fa-download"></i>&nbsp;R&eacute;cup&eacute;rer les sources</h3>
+                <ol>
+                  <li>R&eacute;cup&eacute;rer le code source sur <a href="https://github.com/loganbraga/breakinvaders/archive/master.zip">Github</a></li>
+                  <li>Disposer d'un <a href="https://gcc.gnu.org/">compilateur C++</a></li>
+                  <li>Installer l'utilitaire <a href="https://www.gnu.org/software/make/">GNU Make</a>&nbsp;/&nbsp;<a href="http://gnuwin32.sourceforge.net/packages/make.htm">Windows Make</a></li>
+                  <li>Obtenir la biblioth&egrave;que <a href="http://qt-project.org/downloads">Qt</a></li>
+                  <li>Installer le programme <a href="http://qt-project.org/wiki/category:tools::qtcreator">Qt Creator</a></li>
+                </ol>
+              </div>
+              <div class="col-md-4">
+                <h3><i class="fa fa-cogs"></i>&nbsp;Compiler</h3>
+                <ol>
+                  <li>G&eacute;n&eacute;rer le projet Qt</li>
+                  <code>
+                    qmake
+                  </code>
+                  <li>Lancer la compilation</li>
+                  <code>
+                    make
+                  </code>
+                  <li>Nettoyer le r&eacute;pertoire</li>
+                  <code>
+                    make clean
+                  </code>
+                </ol>
+              </div>
+              <div class="col-md-4">
+                <h3><i class="fa fa-desktop"></i>&nbsp;Installer</h3>
+                <ol>
+                  <li>Installer le programme</li>
+                  <code>
+                    [sudo] make install
+                  </code>
+                  <li>Ajouter un raccourci</li>
+                  <li>Recharger le <em>$PATH</em> et/ou le <em>shell</em></li>
+                  <li>Jouer</li>
+                  <code>
+                    BreakInvaders
+                  </code>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+      </div>
+
+      <div id="update">
+        <div class="container">
+          <div class="row">
+            <br>
+            <br>
+            <h1 class="centered">Mettre &agrave; jour</h1>
+            <br>
+            <br>
+            <div class="col-md-8 col-md-offset-2">
+              <p class="centered">
+                Le programme n'est (pour l'instant) pas capable de se mettre &agrave; jour automatiquement. Vous devrez v&eacute;rifier les mises &agrave; jours disponibles et les installer manuellement en r&eacute;p&eacute;tant les op&eacute;rations ci-dessus.
+              </p>
+              <div id="hints">
+                <a class="accordion ac accordion-toggle" data-toggle="collapse" data-parent="#hints" href="#hints-list"><h4>Astuces&nbsp;<i class="fa fa-angle-down"></i></h4></a>
+                <div id="hints-list" class="collapse">
+                  <ul>
+                    <li>Vous pouvez &ecirc;tre pr&eacute;venu des nouvelles mises &agrave; jour en suivant le <a href="http://github.com/loganbraga/breakinvaders" target="_blank">d&eacute;p&ocirc;t Github</a> du projet.</li>
+                    <li>Si vous compilez depuis les sources fr&eacute;quemment, n'ex&eacute;cutez pas <code>make clean</code> : garder les fichiers objets pr&eacute;-compil&eacute;s permet de gagner du temps &agrave; la compilation.</li>
+                    <li>Le programme peut ne plus se compiler/fonctionner si ses d&eacute;pendances ont subies d'importants changements ; surveillez les mises &agrave; jours requises des d&eacute;pendances dans le <em>changelog</em> du projet.</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <table class="table">
+                <caption>Historique des versions de BreakInvaders</caption>
+                <tr class="active">
+                  <th><i class="fa fa-tasks"></i>&nbsp;&nbsp;Version</th>
+                  <th><i class="fa fa-calendar"></i>&nbsp;&nbsp;Date</th>
+                  <th><i class="fa fa-github"></i>&nbsp;&nbsp;Commit</th>
+                </tr>
+                <tr>
+                  <td><strong>1.0.0</strong></td>
+                  <td><strong>02/06/2014</strong></td>
+                  <td><strong><a class="tooltip-js" href="https://github.com/loganbraga/breakinvaders/commit/e7b373a2c4440f560a9a6799fcd97c4106eaca56" target="_blank" data-toggle="tooltip" data-placemen="auto top" title="e7b373a2c4440f560a9a6799fcd97c4106eaca56">e7b373a2c4440f560a9a...</a></strong></td>
+                </tr>
+                <tr>
+                  <td>0.2.1</td>
+                  <td>17/05/2014</td>
+                  <td><a class="tooltip-js" href="https://github.com/loganbraga/breakinvaders/commit/e7b373a2c4440f560a9a6799fcd97c4106eaca56" target="_blank" data-toggle="tooltip" data-placemen="auto top" title="e7b373a2c4440f560a9a6799fcd97c4106eaca56">e7b373a2c4440f560a9a...</a></td>
+                </tr>
+                <tr>
+                  <td>0.1.1</td>
+                  <td>15/05/2014</td>
+                  <td><a class="tooltip-js" href="https://github.com/loganbraga/breakinvaders/commit/42ac1de982664884b45974b0f3333dfc11fd0d43" target="_blank" data-toggle="tooltip" data-placemen="auto top" title="42ac1de982664884b45974b0f3333dfc11fd0d43">42ac1de982664884b459...</a></td>
+                </tr>
+              </table>
+              <div id="tableExplain">
+                <a class="accordion ac accordion-toggle" data-toggle="collapse" data-parent="#tableExplain" href="#explain-list"><h5><i class="fa fa-info-circle"></i>&nbsp;Comment &ccedil;a marche&nbsp;?</h5></a>
+                <div id="explain-list" class="collapse">
+                  <p>Les versions sont num&eacute;rot&eacute;es sous la forme <strong>X</strong>.<strong>Y</strong>.<strong>Z</strong>, avec :</p>
+                  <ul>
+                    <li><strong>X</strong> num&eacute;ro de version majeure</li>
+                    <li><strong>Y</strong> num&eacute;ro de fonctionnalit&eacute;</li>
+                    <li><strong>Z</strong> num&eacute;ro de correction de bug</li>
+                  </ul>
+                  <p>L'identifiant de version se lit de droite &agrave; gauche&nbsp;:</p>
+                  <blockquote>Correction <strong>Z</strong> de fonctionnalit&eacute; <strong>Y</strong> dans la version <strong>X</strong> du programme.</blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <br>
-      <hr>
+      <br>
+
     </div>
 
-    <div id="compile">
+    <!-- Contact -->
+    <section id="contact" name="contact"></section>
+    <div id="footerwrap">
       <div class="container">
-        <div class="row centered">
+        <div class="col-lg-5">
+          <h3>Qui sommes-nous&nbsp;?</h3>
+          <p>
+            Logan BRAGA
+            &lt;<a href="http://loganbraga.fr/" target="_blank">loganbraga.fr</a>&gt;<br/>
+            <em>D&eacute;veloppeur &eacute;tudiant<br/></em>
+            <br/>
+            Claire DELAYE
+            &lt;<a href="http://delaye-claire.fr/" target="_blank">delaye-claire.fr</a>&gt;<br/>
+            <em>Graphiste &eacute;tudiante<br></em>
+            <br/>
+            Marie NUEL
+            &lt;<a href="http://marienuel.com/" target="_blank">marienuel.com</a>&gt;<br/>
+            <em>Community Manager &eacute;tudiante<br></em>
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <h3>Nous contacter</h3>
           <br>
-          <br>
-          <h1>Compiler le jeu</h1>
-          <br>
-          <br>
-          <div class="instruction col-md-12 col-md-offset-0">
-            <p>
-              Votre plateforme n'est pas incluse, les ex&eacute;cutables ci-dessus ne vous conviennent pas ou vous aimez tout simplement compiler vos programmes&nbsp;?
-              C'est possible&nbsp;!
-              <br>
-              <em>Attention, vise les utilisateurs avanc&eacute;s.</em>
-            </p>
+          <form id="contactForm" role="form" action="#" method="post" enctype="plain">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                <input id="name" type="text" name="name" class="form-control input-lg" placeholder="Nom..." maxlength="51" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                <input id="email" type="email" name="email" class="form-control input-lg" placeholder="Mail..." maxlength="256" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+                <textarea id="message" class="tooltip-js form-control input-lg" name="message" rows="5" placeholder="Message..." maxlength="10001" required></textarea>
+              </div>
+            </div>
             <br>
-            <div class="col-md-4">
-              <h3><i class="fa fa-download"></i>&nbsp;R&eacute;cup&eacute;rer les sources</h3>
-              <ol>
-                <li>R&eacute;cup&eacute;rer le code source sur <a href="https://github.com/loganbraga/breakinvaders/archive/master.zip">Github</a></li>
-                <li>Disposer d'un <a href="https://gcc.gnu.org/">compilateur C++</a></li>
-                <li>Installer l'utilitaire <a href="https://www.gnu.org/software/make/">GNU Make</a>&nbsp;/&nbsp;<a href="http://gnuwin32.sourceforge.net/packages/make.htm">Windows Make</a></li>
-                <li>Obtenir la biblioth&egrave;que <a href="http://qt-project.org/downloads">Qt</a></li>
-                <li>Installer le programme <a href="http://qt-project.org/wiki/category:tools::qtcreator">Qt Creator</a></li>
-              </ol>
-            </div>
-            <div class="col-md-4">
-              <h3><i class="fa fa-cogs"></i>&nbsp;Compiler</h3>
-              <ol>
-                <li>G&eacute;n&eacute;rer le projet Qt</li>
-                <code>
-                  qmake
-                </code>
-                <li>Lancer la compilation</li>
-                <code>
-                  make
-                </code>
-                <li>Nettoyer le r&eacute;pertoire</li>
-                <code>
-                  make clean
-                </code>
-              </ol>
-            </div>
-            <div class="col-md-4">
-              <h3><i class="fa fa-desktop"></i>&nbsp;Installer</h3>
-              <ol>
-                <li>Installer le programme</li>
-                <code>
-                  [sudo] make install
-                </code>
-                <li>Ajouter un raccourci</li>
-                <li>Recharger le <em>$PATH</em> et/ou le <em>shell</em></li>
-                <li>Jouer</li>
-                <code>
-                  BreakInvaders
-                </code>
-              </ol>
-            </div>
-          </div>
+            <button type="submit" id="sendContactForm" class="btn btn-lg btn-default"><i class="fa fa-check"></i> ENVOYER</button>
+            <button type="reset" id="formReset" class="btn btn-lg btn-danger"><i class="fa fa-times"></i> ANNULER</button>
+          </form>
         </div>
       </div>
     </div>
-    <br>
-    <br>
-  </div>
 
-
-      <!-- Contact -->
-      <section id="contact" name="contact"></section>
-      <div id="footerwrap">
-        <div class="container">
-          <div class="col-lg-5">
-            <h3>Qui sommes-nous&nbsp;?</h3>
-            <p>
-              Logan BRAGA
-              &lt;<a href="http://loganbraga.fr/" target="_blank">loganbraga.fr</a>&gt;<br/>
-              <em>D&eacute;veloppeur &eacute;tudiant<br/></em>
-              <br/>
-              Claire DELAYE
-              &lt;<a href="http://delaye-claire.fr/" target="_blank">delaye-claire.fr</a>&gt;<br/>
-              <em>Graphiste &eacute;tudiante<br></em>
-              <br/>
-              Marie NUEL
-              &lt;<a href="http://marienuel.com/" target="_blank">marienuel.com</a>&gt;<br/>
-              <em>Community Manager &eacute;tudiante<br></em>
-            </p>
-          </div>
-
-          <div class="col-lg-6">
-            <h3>Nous contacter</h3>
-            <br>
-            <form id="contactForm" role="form" action="#" method="post" enctype="plain">
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                  <input id="name" type="text" name="name" class="form-control input-lg" placeholder="Nom..." maxlength="51" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
-                  <input id="email" type="email" name="email" class="form-control input-lg" placeholder="Mail..." maxlength="256" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
-                  <textarea id="message" class="tooltip-js form-control input-lg" name="message" rows="5" placeholder="Message..." maxlength="10001" required></textarea>
-                </div>
-              </div>
-              <br>
-              <button type="submit" id="sendContactForm" class="btn btn-lg btn-default"><i class="fa fa-check"></i> ENVOYER</button>
-              <button type="reset" id="formReset" class="btn btn-lg btn-danger"><i class="fa fa-times"></i> ANNULER</button>
-            </form>
-          </div>
-        </div>
+    <div id="credits">
+      <div class="container">
+        <p>Logan <b>BRAGA</b> - Claire <b>DELAYE</b> - Marie <b>NUEL</b>
+          <br/>Licence <a href="https://github.com/loganbraga/breakinvaders/blob/master/LICENCE">WTFPL</a>
+          <br/><span class='mini'>Base th&egrave;me par <a href="http://www.blacktie.co">blacktie.co</a></span></p>
       </div>
+    </div>
 
-      <div id="credits">
-        <div class="container">
-          <p>Logan <b>BRAGA</b> - Claire <b>DELAYE</b> - Marie <b>NUEL</b>
-            <br/>Licence <a href="https://github.com/loganbraga/breakinvaders/blob/master/LICENCE">WTFPL</a>
-            <br/><span class='mini'>Base th&egrave;me par <a href="http://www.blacktie.co">blacktie.co</a></span></p>
-        </div>
-      </div>
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/easing.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
 
-      <!-- Javascript -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.validate.min.js"></script>
-      <script src="assets/js/easing.js"></script>
-      <script src="assets/js/main.js"></script>
-      <script src="assets/js/bootstrap.js"></script>
-    </body>
-
-  </html>
+</html>

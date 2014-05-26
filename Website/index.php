@@ -315,7 +315,7 @@
                       </tr>
                       <tr>
                         <td><strong>1</strong></td>
-                        <td><em>Claire Delaye</em></td>
+                        <td>Claire Delaye</td>
                         <td>13 524</td>
                       </tr>
                       <tr>

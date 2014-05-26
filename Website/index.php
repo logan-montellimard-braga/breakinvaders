@@ -315,13 +315,13 @@
                       </tr>
                       <tr>
                         <td><strong>1</strong></td>
-                        <td>Logan Braga</td>
-                        <td>12 553</td>
+                        <td><em>Claire Delaye</em></td>
+                        <td>13 524</td>
                       </tr>
                       <tr>
                         <td><strong>2</strong></td>
-                        <td><em>Place &agrave; prendre&nbsp;!</em></td>
-                        <td>0</td>
+                        <td>Logan Braga</td>
+                        <td>12 553</td>
                       </tr>
                       <tr>
                         <td><strong>3</strong></td>

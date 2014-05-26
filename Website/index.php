@@ -595,7 +595,7 @@
                 </tr>
               </table>
               <div id="tableExplain">
-                <a class="accordion ac accordion-toggle" data-toggle="collapse" data-parent="#tableExplain" href="#explain-list"><h5><i class="fa fa-info-circle"></i>&nbsp;Comment &ccedil;a marche&nbsp;?</h5></a>
+                <a class="accordion ac accordion-toggle" data-toggle="collapse" data-parent="#tableExplain" href="#explain-list"><h5><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Comment &ccedil;a marche&nbsp;?</h5></a>
                 <div id="explain-list" class="collapse">
                   <p>Les versions sont num&eacute;rot&eacute;es sous la forme <strong>X</strong>.<strong>Y</strong>.<strong>Z</strong>, avec :</p>
                   <ul>

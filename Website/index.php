@@ -201,6 +201,7 @@
             <h3>Comment jouer&nbsp;?</h3>
           </a>
           <br>
+          <?php include('sendScoreForm.php'); ?>
           <!-- ACCORDION -->
           <div class="accordion ac" id="game-rules" class="accordion-body collapse in">
             <div class="accordion-group">
@@ -236,7 +237,7 @@
 
             <div class="accordion-group">
               <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#game-rules" href="#rules-score">
+                <a id="scoresAnchor" class="accordion-toggle" data-toggle="collapse" data-parent="#game-rules" href="#rules-score">
                   Les Scores  &nbsp;<i class="black fa fa-angle-down"></i>
                 </a>
               </div>
@@ -305,7 +306,7 @@
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   <h4 class="modal-title" id="myModalLabel">Les meilleurs scores</h4>
                 </div>
-                <form id="scoresForm" role="form" action="#" method="post" enctype="plain">
+                <form id="scoresForm" role="form" action="#features" method="post" enctype="plain">
                   <div class="modal-body">
                     <table class="table table-stripped table-hover table-responsive table-bordered">
                       <tr class="active">
@@ -350,7 +351,7 @@
                       </div>
                     </div>
                     <br>
-                    <button type="submit" id="sendScoreForm" class="btn btn-default"><i class="fa fa-check"></i> Envoyer</button>
+                    <button type="submit" id="sendScoreForm" class="btn btn-default" name="sendScoreForm"><i class="fa fa-check"></i> Envoyer</button>
                     <button type="reset" id="resetScoreForm" class="btn btn-danger"><i class="fa fa-times"></i> Annuler</button>
                   </div>
                 </form>

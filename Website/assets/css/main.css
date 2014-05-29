@@ -443,3 +443,17 @@ input[type=name]:focus, input[type=email]:focus, textarea:focus {
 .modal-body {
   text-align: left;
 }
+
+.breadcrumb {
+  margin-top: 20px;
+  background-color: #f8f8f8;
+}
+
+#footer404 {
+  text-align: right;
+}
+
+.server-error {
+  /* color: #d9534f; */
+  font-family: 'Lato';
+}

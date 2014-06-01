@@ -9,7 +9,7 @@ BreakInvaders::BreakInvaders(QWidget *parent) : QWidget(parent)
   scoreController = new Score();
   cout << "Meilleur score : " << scoreController->getBestScore() << "\n";
 
-  constructBricks();
+  anyBrick = false;
   resetGameStatus();
 }
 
@@ -17,23 +17,30 @@ BreakInvaders::~BreakInvaders()
 {
   delete ball;
   delete paddle;
-  for (int i = 0; i < BRICKS; i++)
-  {
-    delete bricks[i];
-  }
+  destructBricks();
   cout << "Score : " << scoreController->getScore() << "\n";
 }
 
 void BreakInvaders::constructBricks()
 {
   int k = 0;
+  int imageSeed = 1;
   for (int i = 0; i < ROWS; i++)
   {
     for (int j = 0; j < COLS; j++)
     {
-      bricks[k] = new Brick(j*40+35, i*15+30);
+      rand() % 10 > 6 ? imageSeed = 2 : imageSeed = 1;
+      bricks[k] = new Brick(j*40+35, i*15+30, imageSeed);
       k++;
     }
+  }
+}
+
+void BreakInvaders::destructBricks()
+{
+  for (int i = 0; i < BRICKS; i++)
+  {
+    delete bricks[i];
   }
 }
 
@@ -58,6 +65,11 @@ void BreakInvaders::resetGameStatus()
     ball->resetState(paddle->getGeneratedPos());
   }
 
+  if (anyBrick)
+  {
+    destructBricks();
+  }
+
   gameOver = false;
   gameWon = false;
   gameStarted = false;
@@ -66,6 +78,7 @@ void BreakInvaders::resetGameStatus()
   nullifiedBricks = 0;
   lastLostTime = time(NULL);
   scoreController->resetScore();
+  constructBricks();
   for (int i = 0; i < BRICKS; i++)
   {
     bricks[i]->setDestroyed(false);

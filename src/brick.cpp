@@ -1,8 +1,20 @@
 #include "include/brick.h"
 
-Brick::Brick(int x, int y) 
+Brick::Brick(int x, int y, int imageSeed)
 {
-  image.load("src/images/brick.png");
+  switch (imageSeed)
+  {
+    case 1:
+      {
+        image.load("src/images/brick.png");
+        break;
+      }
+    case 2:
+      {
+        image.load("src/images/brick_black.png");
+        break;
+      }
+  }
   destroyed = false;
   rect = image.rect();
   rect.translate(x, y);

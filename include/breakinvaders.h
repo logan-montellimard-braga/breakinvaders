@@ -27,6 +27,7 @@ class BreakInvaders : public QWidget
 
     void resetGameStatus();
     void constructBricks();
+    void destructBricks();
     void nullifyBricks();
     void calculateScore();
     void startGame();
@@ -51,6 +52,7 @@ class BreakInvaders : public QWidget
     bool gameWon;
     bool gameStarted;
     bool paused;
+    bool anyBrick;
     Ball *ball;
     Paddle *paddle;
     Brick * bricks[BRICKS];

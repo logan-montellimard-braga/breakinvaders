@@ -7,7 +7,7 @@
 class Brick
 {
   public:
-    Brick(int, int);
+    Brick(int, int, int imageSeed = 1);
 
   public:
     void resetState();

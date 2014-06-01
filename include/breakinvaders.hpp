@@ -37,6 +37,7 @@ class BreakInvaders : public QWidget
     void lostBall();
     void victory();
     void checkCollision();
+    void toggleNightMode();
 
   private:
     int timerId;
@@ -53,6 +54,7 @@ class BreakInvaders : public QWidget
     bool gameStarted;
     bool paused;
     bool anyBrick;
+    bool nightMode;
     Ball *ball;
     Paddle *paddle;
     Brick * bricks[BRICKS];

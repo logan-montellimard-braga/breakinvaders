@@ -10,6 +10,7 @@ BreakInvaders::BreakInvaders(QWidget *parent) : QWidget(parent)
   cout << "Meilleur score : " << scoreController->getBestScore() << "\n";
 
   anyBrick = false;
+  nightMode = false;
   resetGameStatus();
 }
 
@@ -25,6 +26,7 @@ void BreakInvaders::constructBricks()
 {
   int k = 0;
   int imageSeed = 1;
+  anyBrick = true;
   for (int i = 0; i < ROWS; i++)
   {
     for (int j = 0; j < COLS; j++)
@@ -42,6 +44,7 @@ void BreakInvaders::destructBricks()
   {
     delete bricks[i];
   }
+  anyBrick = false;
 }
 
 void BreakInvaders::nullifyBricks()
@@ -103,6 +106,14 @@ void BreakInvaders::paintEvent(QPaintEvent *event)
     int w = width();
 
     QPen penHText(QColor("#2f2f2f"));
+    if (nightMode)
+    {
+      penHText.setColor("#ececec");
+    }
+    else
+    {
+      penHText.setColor("#2f2f2f");
+    }
     painter.setPen(penHText);
     painter.translate(QPoint(w/2, h/2));
     painter.drawText(-textWidth/2, 0, "Perdu !");
@@ -122,7 +133,6 @@ void BreakInvaders::paintEvent(QPaintEvent *event)
     painter.setPen(penHTextRed);
     int textWidthReplay = fmMini.width("<Espace> pour rejouer");
     painter.drawText(-textWidthReplay/2, 100, "<Espace> pour rejouer");
-    QPen penHTextMini(QColor("#2f2f2f"));
   }
   else if(gameWon)
   {
@@ -145,7 +155,16 @@ void BreakInvaders::paintEvent(QPaintEvent *event)
     painter.setFont(fontMini);
     int textWidthReplay = fmMini.width("<Espace> pour rejouer");
     painter.drawText(-textWidthReplay/2, 100, "<Espace> pour rejouer");
+
     QPen penHTextMini(QColor("#2f2f2f"));
+    if (nightMode)
+    {
+      penHTextMini.setColor("#ececec");
+    }
+    else
+    {
+      penHTextMini.setColor("#2f2f2f");
+    }
     painter.setPen(penHTextMini);
 
     QString scoreBase = "Score : ";
@@ -237,6 +256,11 @@ void BreakInvaders::keyPressEvent(QKeyEvent *event)
       }
     }
     break;
+    case Qt::Key_N:
+    {
+      toggleNightMode();
+    }
+    break;
     case Qt::Key_Escape: case Qt::Key_Q:
     {
       qApp->exit();
@@ -325,6 +349,20 @@ void BreakInvaders::lostBall()
       ball->resetState(paddle->getGeneratedPos());
       pauseGame();
     }
+  }
+}
+
+void BreakInvaders::toggleNightMode()
+{
+  if (nightMode)
+  {
+    this->setStyleSheet("QWidget { background-color: #f2f2f2 }");
+    nightMode = false;
+  }
+  else
+  {
+    this->setStyleSheet("QWidget { background-color: #2f2f2f }");
+    nightMode = true;
   }
 }
 

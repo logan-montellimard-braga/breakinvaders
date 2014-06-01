@@ -27,6 +27,10 @@ void center(QWidget &widget)
 int main(int argc, char *argv[])
 {
   QApplication app(argc, argv);
+  QFile file("src/qss/main.qss");
+  file.open(QFile::ReadOnly);
+  QString styleSheet = QLatin1String(file.readAll());
+  app.setStyleSheet(styleSheet);
 
   BreakInvaders window;
 

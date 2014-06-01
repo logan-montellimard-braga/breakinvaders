@@ -32,3 +32,13 @@ void Brick::setDestroyed(bool destr)
 {
   destroyed = destr;
 }
+
+bool Brick::isNullified()
+{
+  return nullified;
+}
+
+void Brick::setNullified(bool nullify)
+{
+  nullified = nullify;
+}

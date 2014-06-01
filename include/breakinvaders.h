@@ -27,6 +27,7 @@ class BreakInvaders : public QWidget
 
     void resetGameStatus();
     void constructBricks();
+    void nullifyBricks();
     void calculateScore();
     void startGame();
     void pauseGame();
@@ -39,6 +40,7 @@ class BreakInvaders : public QWidget
   private:
     int timerId;
     int lives;
+    int nullifiedBricks;
     static const int ROWS = 6;
     static const int COLS = 6;
     static const int MAX_LIVES = 3;

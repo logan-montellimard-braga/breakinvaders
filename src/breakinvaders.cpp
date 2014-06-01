@@ -37,6 +37,19 @@ void BreakInvaders::constructBricks()
   }
 }
 
+void BreakInvaders::nullifyBricks()
+{
+  for (int i = 0; i < BRICKS; i++)
+  {
+    int randSeed = rand() % 10;
+    if (randSeed > 8 && nullifiedBricks < 11)
+    {
+      bricks[i]->setNullified(true);
+      nullifiedBricks++;
+    }
+  }
+}
+
 void BreakInvaders::resetGameStatus()
 {
   if (gameWon)
@@ -50,12 +63,15 @@ void BreakInvaders::resetGameStatus()
   gameStarted = false;
   paused = false;
   lives = MAX_LIVES;
+  nullifiedBricks = 0;
   lastLostTime = time(NULL);
   scoreController->resetScore();
   for (int i = 0; i < BRICKS; i++)
   {
     bricks[i]->setDestroyed(false);
+    bricks[i]->setNullified(false);
   }
+  nullifyBricks();
 }
 
 void BreakInvaders::paintEvent(QPaintEvent *event)
@@ -96,7 +112,7 @@ void BreakInvaders::paintEvent(QPaintEvent *event)
 
     for (int i = 0; i < BRICKS; i++)
     {
-      if (!bricks[i]->isDestroyed())
+      if (!bricks[i]->isDestroyed() && !bricks[i]->isNullified())
       {
         painter.drawImage(bricks[i]->getRect(), bricks[i]->getImage());
       }
@@ -159,7 +175,10 @@ void BreakInvaders::keyPressEvent(QKeyEvent *event)
     {
       for (int i = 0; i < BRICKS - 1; i++)
       {
-        bricks[i]->setDestroyed(true);
+        if (!bricks[i]->isNullified())
+        {
+          bricks[i]->setDestroyed(true);
+        }
       }
     }
     break;
@@ -267,7 +286,7 @@ void BreakInvaders::checkCollision()
     {
       j++;
     }
-    if (j >= BRICKS)
+    if (j >= BRICKS - nullifiedBricks)
     {
       victory();
     }
@@ -328,7 +347,7 @@ void BreakInvaders::checkCollision()
       QPoint pointTop(ballLeft, ballTop -1);
       QPoint pointBottom(ballLeft, ballTop + ballHeight + 1);
 
-      if (!bricks[i]->isDestroyed())
+      if (!bricks[i]->isDestroyed() && !bricks[i]->isNullified())
       {
         if(bricks[i]->getRect().contains(pointRight))
         {

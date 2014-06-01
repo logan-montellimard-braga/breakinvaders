@@ -15,6 +15,8 @@ class Brick
     void setDestroyed(bool);
     bool isNullified();
     void setNullified(bool);
+    bool isBlack();
+    void setBlack(bool);
     QRect getRect();
     void setRect(QRect);
     QImage & getImage();
@@ -25,6 +27,7 @@ class Brick
     int position;
     bool destroyed;
     bool nullified;
+    bool black;
 };
 
 #endif

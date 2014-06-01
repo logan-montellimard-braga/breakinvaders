@@ -7,11 +7,13 @@ Brick::Brick(int x, int y, int imageSeed)
     case 1:
       {
         image.load("src/images/brick.png");
+        black = false;
         break;
       }
     case 2:
       {
         image.load("src/images/brick_black.png");
+        black = true;
         break;
       }
   }
@@ -53,4 +55,18 @@ bool Brick::isNullified()
 void Brick::setNullified(bool nullify)
 {
   nullified = nullify;
+}
+
+bool Brick::isBlack()
+{
+  return black;
+}
+
+void Brick::setBlack(bool color)
+{
+  black = color;
+  if (!color)
+  {
+    image.load("src/images/brick.png");
+  }
 }

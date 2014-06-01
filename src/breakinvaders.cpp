@@ -1,4 +1,4 @@
-#include "include/breakinvaders.h"
+#include "include/breakinvaders.hpp"
 
 QTextStream cout(stdout, QIODevice::WriteOnly);
 

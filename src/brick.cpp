@@ -1,4 +1,4 @@
-#include "include/brick.h"
+#include "include/brick.hpp"
 
 Brick::Brick(int x, int y, int imageSeed)
 {

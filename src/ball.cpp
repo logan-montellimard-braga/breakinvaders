@@ -1,4 +1,4 @@
-#include "include/ball.h"
+#include "include/ball.hpp"
 
 Ball::Ball(int paddlePos)
 {

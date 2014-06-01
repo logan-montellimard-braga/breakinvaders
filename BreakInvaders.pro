@@ -9,7 +9,7 @@ INCLUDEPATH += . include
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets 
 
 # Input
-HEADERS += include/ball.h include/breakinvaders.h include/brick.h include/paddle.h include/score.h
+HEADERS += include/ball.hpp include/breakinvaders.hpp include/brick.hpp include/paddle.hpp include/score.hpp
 SOURCES += src/ball.cpp \
            src/breakinvaders.cpp \
            src/brick.cpp \

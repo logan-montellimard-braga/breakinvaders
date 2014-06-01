@@ -1,4 +1,4 @@
-#include "include/breakinvaders.h"
+#include "include/breakinvaders.hpp"
 #include <QDesktopWidget>
 #include <QApplication>
 

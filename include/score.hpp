@@ -1,7 +1,7 @@
 #ifndef SCORE_H
 #define SCORE_H
 
-#include "include/brick.h"
+#include "include/brick.hpp"
 #include <QTextStream>
 #include <QFile>
 #include <QIODevice>

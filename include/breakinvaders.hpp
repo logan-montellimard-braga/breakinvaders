@@ -1,10 +1,10 @@
 #ifndef BREAKINVADERS_H
 #define BREAKINVADERS_H
 
-#include "include/paddle.h"
-#include "include/ball.h"
-#include "include/brick.h"
-#include "include/score.h"
+#include "include/paddle.hpp"
+#include "include/ball.hpp"
+#include "include/brick.hpp"
+#include "include/score.hpp"
 #include <QWidget>
 #include <QKeyEvent>
 #include <QPainter>

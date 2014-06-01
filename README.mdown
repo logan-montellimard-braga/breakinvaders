@@ -19,7 +19,10 @@ BreakInvaders est un mini-jeu r&eacute;alis&eacute; dans le cadre du projet Pixe
 > Ne criez pas victoire trop vite non plus ; les briques noires sont l&agrave; pour vite vous faire retomber sur terre...
 
 ### Les images
-*(&agrave; remplir)*
+![ScreenShot] (https://raw.githubusercontent.com/loganbraga/breakinvaders/master/Website/assets/img/main_affiche.png)
+
+
+![ScreenShot] (https://raw.githubusercontent.com/loganbraga/breakinvaders/master/Website/assets/img/affiche2.png)
 
 ### Les contr&ocirc;les
 + **Lancer le jeu**

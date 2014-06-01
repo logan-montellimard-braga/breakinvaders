@@ -106,6 +106,23 @@ void BreakInvaders::paintEvent(QPaintEvent *event)
     painter.setPen(penHText);
     painter.translate(QPoint(w/2, h/2));
     painter.drawText(-textWidth/2, 0, "Perdu !");
+
+
+    QFont fontMini("Monospace", 10, QFont::DemiBold);
+    QFontMetrics fmMini(fontMini);
+    painter.setFont(fontMini);
+
+    QString bestScoreBase = "Meilleur score : ";
+    QString bestScoreNumber = QString::number(scoreController->getBestScore());
+    QString bestScoreText = bestScoreBase + bestScoreNumber;
+    int textWidthBestScore = fmMini.width(bestScoreText);
+    painter.drawText(-textWidthBestScore/2, 35, bestScoreText);
+
+    QPen penHTextRed(QColor("#d9534f"));
+    painter.setPen(penHTextRed);
+    int textWidthReplay = fmMini.width("<Espace> pour rejouer");
+    painter.drawText(-textWidthReplay/2, 100, "<Espace> pour rejouer");
+    QPen penHTextMini(QColor("#2f2f2f"));
   }
   else if(gameWon)
   {
@@ -121,6 +138,27 @@ void BreakInvaders::paintEvent(QPaintEvent *event)
     painter.setPen(penHText);
     painter.translate(QPoint(w/2, h/2));
     painter.drawText(-textWidth/2, 0, "Victoire !");
+
+
+    QFont fontMini("Monospace", 10, QFont::DemiBold);
+    QFontMetrics fmMini(fontMini);
+    painter.setFont(fontMini);
+    int textWidthReplay = fmMini.width("<Espace> pour rejouer");
+    painter.drawText(-textWidthReplay/2, 100, "<Espace> pour rejouer");
+    QPen penHTextMini(QColor("#2f2f2f"));
+    painter.setPen(penHTextMini);
+
+    QString scoreBase = "Score : ";
+    QString scoreNumber = QString::number(scoreController->getScore());
+    QString scoreText = scoreBase + scoreNumber;
+    int textWidthScore = fmMini.width(scoreText);
+    painter.drawText(-textWidthScore/2, 40, scoreText);
+
+    QString bestScoreBase = "Meilleur score : ";
+    QString bestScoreNumber = QString::number(scoreController->getBestScore());
+    QString bestScoreText = bestScoreBase + bestScoreNumber;
+    int textWidthBestScore = fmMini.width(bestScoreText);
+    painter.drawText(-textWidthBestScore/2, 55, bestScoreText);
   }
   else
   {
@@ -384,7 +422,14 @@ void BreakInvaders::checkCollision()
           ball->setYDir(-1);
         }
 
-        bricks[i]->setDestroyed(true);
+        if (bricks[i]->isBlack())
+        {
+          bricks[i]->setBlack(false);
+        }
+        else
+        {
+          bricks[i]->setDestroyed(true);
+        }
       }
     }
   }

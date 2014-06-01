@@ -89,6 +89,8 @@ void BreakInvaders::paintEvent(QPaintEvent *event)
     int h = height();
     int w = width();
 
+    QPen penHText(QColor("#2f2f2f"));
+    painter.setPen(penHText);
     painter.translate(QPoint(w/2, h/2));
     painter.drawText(-textWidth/2, 0, "Perdu !");
   }
@@ -102,6 +104,8 @@ void BreakInvaders::paintEvent(QPaintEvent *event)
     int h = height();
     int w = width();
 
+    QPen penHText(QColor("#d9534f"));
+    painter.setPen(penHText);
     painter.translate(QPoint(w/2, h/2));
     painter.drawText(-textWidth/2, 0, "Victoire !");
   }

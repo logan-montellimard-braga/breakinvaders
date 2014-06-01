@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BreakInvaders, le jeu. Site web support du jeu, projet Pixel Art IUT MMI du Puy-en-Velay.">
     <meta name="author" content="Logan Braga Claire Delaye Marie Nuel">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <title>BreakInvaders, le Jeu</title>
 

@@ -51,6 +51,7 @@ Seules les fonctionnalit&eacute;s notables sont list&eacute;es ici.
 + G&eacute;n&eacute;ration al&eacute;atoire de la position de la balle &agrave; chaque tour
 + G&eacute;n&eacute;ration dynamique des constructions
 + Personnalisation facile des images du jeu *(briques, balle et palette)*
++ Personnalisation des styles par fichiers CSS
 + Objets bonus
 + Sauvegarde des scores en local
 + Portabilit&eacute;

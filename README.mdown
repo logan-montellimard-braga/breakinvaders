@@ -16,6 +16,7 @@ BreakInvaders est un mini-jeu r&eacute;alis&eacute; dans le cadre du projet Pixe
 > D&egrave;s le d&eacute;but de la partie, d&eacute;placez votre palette afin de rattraper la balle, et visez les briques. Si la balle tombe, c'est perdu... Enfin, apr&egrave;s 3 essais ! Garre aux murs, qui peuvent vous renvoyer la balle avec force...
 
 > Pour chaque brique cass&eacute;e, votre score est incr&eacute;ment&eacute;. Les points que rapportent chaque brique sont calcul&eacute;s selon leur position : plus la brique est dure &agrave; atteindre, et plus elle vous rapportera de points. Le nombre de vies restant en fin de partie vous accorde un bonus de points : les vrais survivants sont bien &eacute;videmment r&eacute;compens&eacute;s... Les l&acirc;ches, aussi, puisque vous faire toucher par un missile diminue votre score !
+> Ne criez pas victoire trop vite non plus ; les briques noires sont l&agrave; pour vite vous faire retomber sur terre...
 
 ### Les images
 *(&agrave; remplir)*
@@ -31,6 +32,8 @@ BreakInvaders est un mini-jeu r&eacute;alis&eacute; dans le cadre du projet Pixe
 + **Mettre en pause**
   - Espace
   - P
++ **Activer/d&eacute;sactiver le mode Nuit**
+  - N
 + **D&eacute;placer la palette**
   - Gauche
     * Fl&egrave;che gauche, Fl&egrave;che haut, H, J
@@ -41,6 +44,9 @@ BreakInvaders est un mini-jeu r&eacute;alis&eacute; dans le cadre du projet Pixe
 Seules les fonctionnalit&eacute;s notables sont list&eacute;es ici.
 *(Liste non-exhaustive)*
 
++ Mode nuit
++ Briques g&eacute;n&eacute;r&eacute;es al&eacute;atoirement
++ Briques noires : briques super solides !
 + G&eacute;n&eacute;ration al&eacute;atoire de la position de la palette &agrave; chaque tour
 + G&eacute;n&eacute;ration al&eacute;atoire de la position de la balle &agrave; chaque tour
 + G&eacute;n&eacute;ration dynamique des constructions

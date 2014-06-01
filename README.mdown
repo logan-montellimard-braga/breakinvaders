@@ -103,6 +103,7 @@ Si la position Y de la balle passe sous la position Y de la palette, elle est co
     + scores.brknvdrs
   * **images/**
       + ball.png
+      + BreakInvaders.png
       + brick.png
       + brick_black.png
       + paddle.png

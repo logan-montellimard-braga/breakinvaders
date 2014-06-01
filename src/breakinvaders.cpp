@@ -7,7 +7,7 @@ BreakInvaders::BreakInvaders(QWidget *parent) : QWidget(parent)
   paddle = new Paddle();
   ball = new Ball(paddle->getGeneratedPos());
   scoreController = new Score();
-  cout << "Best score : " << scoreController->getBestScore() << "\n";
+  cout << "Meilleur score : " << scoreController->getBestScore() << "\n";
 
   constructBricks();
   resetGameStatus();

@@ -457,3 +457,7 @@ input[type=name]:focus, input[type=email]:focus, textarea:focus {
   /* color: #d9534f; */
   font-family: 'Lato';
 }
+
+#features img {
+  border: 1px solid #2f2f2f;
+}

@@ -84,7 +84,7 @@
             <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow1_bis.png" alt="">
           </div>
           <div class="col-lg-8">
-            <img class="img-responsive" src="http://placehold.it/900x520" alt="Notre jeu">
+            <img class="img-responsive" src="assets/img/main_affiche.png" alt="Notre jeu">
           </div>
           <div class="col-lg-2">
             <br>
@@ -193,7 +193,7 @@
         <br>
         <br>
         <div class="col-sm-6 col-lg-4 col-lg-offset-1 centered">
-          <img class="hidden-xs centered" src="http://placehold.it/340x660" alt="Screenshot">
+          <img class="hidden-xs centered" src="assets/img/affiche2.png" alt="Screenshot">
         </div>
 
         <div class="col-sm-6">

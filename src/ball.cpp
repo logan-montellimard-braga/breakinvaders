@@ -30,7 +30,7 @@ void Ball::autoMove()
 
 void Ball::resetState(int paddlePos)
 {
-  int randPosOnPaddle = rand() % 40 + 1;
+  int randPosOnPaddle = rand() % 20 + 10;
   rect.moveTo(paddlePos + randPosOnPaddle, 355);
 }
 

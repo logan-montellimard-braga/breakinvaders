@@ -83,17 +83,18 @@ Si la position Y de la balle passe sous la position Y de la palette, elle est co
 > Quelle est l'architecture du projet ?
 
 - **include/**
-  * ball.h
-  * breakinvaders.h
-  * brick.h
-  * paddle.h
-  * score.h
+  * ball.hpp
+  * breakinvaders.hpp
+  * brick.hpp
+  * paddle.hpp
+  * score.hpp
 - **src/**
   * **data/**
     + scores.brknvdrs
   * **images/**
       + ball.png
       + brick.png
+      + brick_black.png
       + paddle.png
   * ball.cpp
   * breakinvaders.cpp

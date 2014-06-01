@@ -212,7 +212,7 @@
               <div id="rules-concept" class="accordion-body collapse in">
                 <div class="accordion-inner">
                   <p>
-                    BreakInvaders est un mélange entre le traditionnel casse-briques et le non moins célèbre Space Invaders. Le but est de réussir à obtenir le plus haut score, en éliminant les briques. Mais attention, elles peuvent se défendre&nbsp;! Garre aux murs, qui peuvent vous renvoyer la balle avec force...
+                    BreakInvaders est un mélange entre le traditionnel casse-briques et le non moins célèbre Space Invaders. Le but est de réussir à obtenir le plus haut score, en éliminant les briques. Mais attention, elles peuvent se défendre&nbsp;, tandis que les noires ne se laisseront pas briser si facilement ! Garre aux murs, qui peuvent vous renvoyer la balle avec force...
                   </p>
                 </div>
               </div>
@@ -281,6 +281,10 @@
                         <li>Espace</li>
                         <li>P</li>
                     </ul></li>
+                    <li><strong>Activer/D&eacute;sactiver le mode Nuit</strong>
+                      <ul>
+                        <li>N</li>
+                      </ul></li>
                     <li><strong>D&eacute;placer la palette</strong>
                       <ul>
                         <li>Gauche</li>

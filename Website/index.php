@@ -585,8 +585,8 @@
                 </tr>
                 <tr>
                   <td><strong>1.0.0</strong></td>
-                  <td><strong>02/06/2014</strong></td>
-                  <td><strong><a class="tooltip-js" href="https://github.com/loganbraga/breakinvaders/commit/e7b373a2c4440f560a9a6799fcd97c4106eaca56" target="_blank" data-toggle="tooltip" data-placemen="auto top" title="e7b373a2c4440f560a9a6799fcd97c4106eaca56">e7b373a2c4440f560a9a...</a></strong></td>
+                  <td><strong>01/06/2014</strong></td>
+                  <td><strong><a class="tooltip-js" href="https://github.com/loganbraga/breakinvaders/commit/7d8248bf8dea0d121719e51e4156068dd409696d" target="_blank" data-toggle="tooltip" data-placemen="auto top" title="e7b373a2c4440f560a9a6799fcd97c4106eaca56">7d8248bf8dea0d12171...</a></strong></td>
                 </tr>
                 <tr>
                   <td>0.2.1</td>
